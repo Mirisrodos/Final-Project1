@@ -46,13 +46,13 @@ jQuery(document).ready(function ($) {
         <div class="agileits_header">
             <div class="container">
                 <div class="w3l_offers">
-                    <p>SALE UP TO 70% OFF. USE CODE "SALE70%" . <a href="products.html">SHOP NOW</a></p>
+                    <p>SALE UP TO 70% OFF. USE CODE "SALE70%" . <a href="products.jsp">SHOP NOW</a></p>
                 </div>
                 <div class="agile-login">
                     <ul>
-                        <li><a href="registered.html"> Create Account </a></li>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="contact.html">Help</a></li>
+                        <li><a href="registered.jsp"> Create Account </a></li>
+                        <li><a href="login.jsp">Login</a></li>
+                        <li><a href="contact.jsp">Help</a></li>
 
                     </ul>
                 </div>
@@ -76,7 +76,7 @@ jQuery(document).ready(function ($) {
                     </ul>
                 </div>
                 <div class="w3ls_logo_products_left">
-                    <h1><a href="index.html">super Market</a></h1>
+                    <h1><a href="index.jsp">super Market</a></h1>
                 </div>
                 <div class="w3l_search">
                     <form action="#" method="post">
@@ -107,7 +107,7 @@ jQuery(document).ready(function ($) {
                     </div> 
                     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="index.html" class="act">Home</a></li>	
+                            <li class="active"><a href="index.jsp" class="act">Home</a></li>	
                             <!-- Mega Menu -->
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Groceries<b class="caret"></b></a>
@@ -116,12 +116,12 @@ jQuery(document).ready(function ($) {
                                         <div class="multi-gd-img">
                                             <ul class="multi-column-dropdown">
                                                 <h6>All Groceries</h6>
-                                                <li><a href="groceries.html">Dals & Pulses</a></li>
-                                                <li><a href="groceries.html">Almonds</a></li>
-                                                <li><a href="groceries.html">Cashews</a></li>
-                                                <li><a href="groceries.html">Dry Fruit</a></li>
-                                                <li><a href="groceries.html"> Mukhwas </a></li>
-                                                <li><a href="groceries.html">Rice & Rice Products</a></li>
+                                                <li><a href="groceries.jsp">Dals & Pulses</a></li>
+                                                <li><a href="groceries.jsp">Almonds</a></li>
+                                                <li><a href="groceries.jsp">Cashews</a></li>
+                                                <li><a href="groceries.jsp">Dry Fruit</a></li>
+                                                <li><a href="groceries.jsp"> Mukhwas </a></li>
+                                                <li><a href="groceries.jsp">Rice & Rice Products</a></li>
                                             </ul>
                                         </div>	
 
@@ -135,12 +135,12 @@ jQuery(document).ready(function ($) {
                                         <div class="multi-gd-img">
                                             <ul class="multi-column-dropdown">
                                                 <h6>All Household</h6>
-                                                <li><a href="household.html">Cookware</a></li>
-                                                <li><a href="household.html">Dust Pans</a></li>
-                                                <li><a href="household.html">Scrubbers</a></li>
-                                                <li><a href="household.html">Dust Cloth</a></li>
-                                                <li><a href="household.html"> Mops </a></li>
-                                                <li><a href="household.html">Kitchenware</a></li>
+                                                <li><a href="household.jsp">Cookware</a></li>
+                                                <li><a href="household.jsp">Dust Pans</a></li>
+                                                <li><a href="household.jsp">Scrubbers</a></li>
+                                                <li><a href="household.jsp">Dust Cloth</a></li>
+                                                <li><a href="household.jsp"> Mops </a></li>
+                                                <li><a href="household.jsp">Kitchenware</a></li>
                                             </ul>
                                         </div>
 
@@ -155,12 +155,12 @@ jQuery(document).ready(function ($) {
                                         <div class="multi-gd-img">
                                             <ul class="multi-column-dropdown">
                                                 <h6>Baby Care</h6>
-                                                <li><a href="personalcare.html">Baby Soap</a></li>
-                                                <li><a href="personalcare.html">Baby Care Accessories</a></li>
-                                                <li><a href="personalcare.html">Baby Oil & Shampoos</a></li>
-                                                <li><a href="personalcare.html">Baby Creams & Lotion</a></li>
-                                                <li><a href="personalcare.html"> Baby Powder</a></li>
-                                                <li><a href="personalcare.html">Diapers & Wipes</a></li>
+                                                <li><a href="personalcare.jsp">Baby Soap</a></li>
+                                                <li><a href="personalcare.jsp">Baby Care Accessories</a></li>
+                                                <li><a href="personalcare.jsp">Baby Oil & Shampoos</a></li>
+                                                <li><a href="personalcare.jsp">Baby Creams & Lotion</a></li>
+                                                <li><a href="personalcare.jsp"> Baby Powder</a></li>
+                                                <li><a href="personalcare.jsp">Diapers & Wipes</a></li>
                                             </ul>
                                         </div>
 
@@ -174,12 +174,12 @@ jQuery(document).ready(function ($) {
                                         <div class="multi-gd-img">
                                             <ul class="multi-column-dropdown">
                                                 <h6>All Accessories</h6>
-                                                <li><a href="packagedfoods.html">Baby Food</a></li>
-                                                <li><a href="packagedfoods.html">Dessert Items</a></li>
-                                                <li><a href="packagedfoods.html">Biscuits</a></li>
-                                                <li><a href="packagedfoods.html">Breakfast Cereals</a></li>
-                                                <li><a href="packagedfoods.html"> Canned Food </a></li>
-                                                <li><a href="packagedfoods.html">Chocolates & Sweets</a></li>
+                                                <li><a href="packagedfoods.jsp">Baby Food</a></li>
+                                                <li><a href="packagedfoods.jsp">Dessert Items</a></li>
+                                                <li><a href="packagedfoods.jsp">Biscuits</a></li>
+                                                <li><a href="packagedfoods.jsp">Breakfast Cereals</a></li>
+                                                <li><a href="packagedfoods.jsp"> Canned Food </a></li>
+                                                <li><a href="packagedfoods.jsp">Chocolates & Sweets</a></li>
                                             </ul>
                                         </div>
 
@@ -194,21 +194,21 @@ jQuery(document).ready(function ($) {
                                         <div class="multi-gd-img">
                                             <ul class="multi-column-dropdown">
                                                 <h6>Tea & Coeffe</h6>
-                                                <li><a href="beverages.html">Green Tea</a></li>
-                                                <li><a href="beverages.html">Ground Coffee</a></li>
-                                                <li><a href="beverages.html">Herbal Tea</a></li>
-                                                <li><a href="beverages.html">Instant Coffee</a></li>
-                                                <li><a href="beverages.html"> Tea </a></li>
-                                                <li><a href="beverages.html">Tea Bags</a></li>
+                                                <li><a href="beverages.jsp">Green Tea</a></li>
+                                                <li><a href="beverages.jsp">Ground Coffee</a></li>
+                                                <li><a href="beverages.jsp">Herbal Tea</a></li>
+                                                <li><a href="beverages.jsp">Instant Coffee</a></li>
+                                                <li><a href="beverages.jsp"> Tea </a></li>
+                                                <li><a href="beverages.jsp">Tea Bags</a></li>
                                             </ul>
                                         </div>
 
                                     </div>
                                 </ul>
                             </li>
-                            <li><a href="gourmet.html">Gourmet</a></li>
-                            <li><a href="offers.html">Offers</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="gourmet.jsp">Gourmet</a></li>
+                            <li><a href="offers.jsp">Offers</a></li>
+                            <li><a href="contact.jsp">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -220,7 +220,7 @@ jQuery(document).ready(function ($) {
         <div class="breadcrumbs">
             <div class="container">
                 <ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
-                    <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+                    <li><a href="index.jsp"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
                     <li class="active">Products</li>
                 </ol>
             </div>
@@ -233,36 +233,36 @@ jQuery(document).ready(function ($) {
                     <div class="categories">
                         <h2>Categories</h2>
                         <ul class="cate">
-                            <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Fruits And Vegetables</a></li>
+                            <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Fruits And Vegetables</a></li>
                             <ul>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Cuts & Sprouts</a></li>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Flowers</a></li>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Fresh Herbs & Seasonings</a></li>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Fresh Vegetables</a> </li>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>International Vegetables</a> </li>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Organic Fruits & Vegetables</a></li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Cuts & Sprouts</a></li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Flowers</a></li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Fresh Herbs & Seasonings</a></li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Fresh Vegetables</a> </li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>International Vegetables</a> </li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Organic Fruits & Vegetables</a></li>
                             </ul>
-                            <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Grocery & Staples</a></li>
+                            <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Grocery & Staples</a></li>
                             <ul>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Dals & Pulses</a> </li>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Dry Fruits</a> </li>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Edible Oils & Ghee</a> </li>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Flours & Sooji</a> </li>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Masalas & Spices</a> </li>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Organic Staples</a> </li>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Rice & Rice Products</a> </li>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Salt, Sugar & Jaggery</a></li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Dals & Pulses</a> </li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Dry Fruits</a> </li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Edible Oils & Ghee</a> </li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Flours & Sooji</a> </li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Masalas & Spices</a> </li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Organic Staples</a> </li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Rice & Rice Products</a> </li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Salt, Sugar & Jaggery</a></li>
                             </ul>
-                            <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>PersonalCare</a></li>
+                            <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>PersonalCare</a></li>
                             <ul>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Baby Care</a> </li>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Cosmetics</a> </li>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Deos & Perfumes</a> </li>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Skin Care</a> </li>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Sanitary Needs</a> </li>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Oral Care</a> </li>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Personal Hygiene</a> </li>
-                                <li><a href="products.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Shaving Needs</a></li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Baby Care</a> </li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Cosmetics</a> </li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Deos & Perfumes</a> </li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Skin Care</a> </li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Sanitary Needs</a> </li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Oral Care</a> </li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Personal Hygiene</a> </li>
+                                <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Shaving Needs</a></li>
                             </ul>
                         </ul>
                     </div>																																												
@@ -300,7 +300,7 @@ jQuery(document).ready(function ($) {
                                         <figure>
                                             <div class="snipcart-item block">
                                                 <div class="snipcart-thumb">
-                                                    <a href="single.html"><img title=" " alt=" " src="images/pf4.png"></a>		
+                                                    <a href="single.jsp"><img title=" " alt=" " src="images/pf4.png"></a>		
                                                     <p>Sampann-toor-dal</p>
                                                     <h4>$35.99 <span>$55.00</span></h4>
                                                 </div>
@@ -336,7 +336,7 @@ jQuery(document).ready(function ($) {
                                         <figure>
                                             <div class="snipcart-item block">
                                                 <div class="snipcart-thumb">
-                                                    <a href="single.html"><img title=" " alt=" " src="images/bv3.png"></a>		
+                                                    <a href="single.jsp"><img title=" " alt=" " src="images/bv3.png"></a>		
                                                     <p>Parryss-sugar</p>
                                                     <h4>$30.99 <span>$45.00</span></h4>
                                                 </div>
@@ -375,7 +375,7 @@ jQuery(document).ready(function ($) {
                                         <figure>
                                             <div class="snipcart-item block">
                                                 <div class="snipcart-thumb">
-                                                    <a href="single.html"><img src="images/16.png" alt=" " class="img-responsive"></a>
+                                                    <a href="single.jsp"><img src="images/16.png" alt=" " class="img-responsive"></a>
                                                     <p>Saffola-gold</p>
                                                     <h4>$80.99 <span>$105.00</span></h4>
                                                 </div>
@@ -414,7 +414,7 @@ jQuery(document).ready(function ($) {
                                         <figure>
                                             <div class="snipcart-item block">
                                                 <div class="snipcart-thumb">
-                                                    <a href="single.html"><img title=" " alt=" " src="images/hh4.png"></a>		
+                                                    <a href="single.jsp"><img title=" " alt=" " src="images/hh4.png"></a>		
                                                     <p>Sampann-toor-dal</p>
                                                     <h4>$35.99 <span>$55.00</span></h4>
                                                 </div>
@@ -450,7 +450,7 @@ jQuery(document).ready(function ($) {
                                         <figure>
                                             <div class="snipcart-item block">
                                                 <div class="snipcart-thumb">
-                                                    <a href="single.html"><img title=" " alt=" " src="images/gu5.png"></a>		
+                                                    <a href="single.jsp"><img title=" " alt=" " src="images/gu5.png"></a>		
                                                     <p>Parryss-sugar</p>
                                                     <h4>$30.99 <span>$45.00</span></h4>
                                                 </div>
@@ -489,7 +489,7 @@ jQuery(document).ready(function ($) {
                                         <figure>
                                             <div class="snipcart-item block">
                                                 <div class="snipcart-thumb">
-                                                    <a href="single.html"><img src="images/pc6.png" alt=" " class="img-responsive"></a>
+                                                    <a href="single.jsp"><img src="images/pc6.png" alt=" " class="img-responsive"></a>
                                                     <p>Saffola-gold</p>
                                                     <h4>$80.99 <span>$105.00</span></h4>
                                                 </div>
@@ -528,7 +528,7 @@ jQuery(document).ready(function ($) {
                                         <figure>
                                             <div class="snipcart-item block">
                                                 <div class="snipcart-thumb">
-                                                    <a href="single.html"><img title=" " alt=" " src="images/gu4.png"></a>		
+                                                    <a href="single.jsp"><img title=" " alt=" " src="images/gu4.png"></a>		
                                                     <p>Sampann-toor-dal</p>
                                                     <h4>$35.99 <span>$55.00</span></h4>
                                                 </div>
@@ -564,7 +564,7 @@ jQuery(document).ready(function ($) {
                                         <figure>
                                             <div class="snipcart-item block">
                                                 <div class="snipcart-thumb">
-                                                    <a href="single.html"><img title=" " alt=" " src="images/5.png"></a>		
+                                                    <a href="single.jsp"><img title=" " alt=" " src="images/5.png"></a>		
                                                     <p>Parryss-sugar</p>
                                                     <h4>$30.99 <span>$45.00</span></h4>
                                                 </div>
@@ -603,7 +603,7 @@ jQuery(document).ready(function ($) {
                                         <figure>
                                             <div class="snipcart-item block">
                                                 <div class="snipcart-thumb">
-                                                    <a href="single.html"><img src="images/6.png" alt=" " class="img-responsive"></a>
+                                                    <a href="single.jsp"><img src="images/6.png" alt=" " class="img-responsive"></a>
                                                     <p>Saffola-gold</p>
                                                     <h4>$80.99 <span>$105.00</span></h4>
                                                 </div>
@@ -671,30 +671,30 @@ jQuery(document).ready(function ($) {
                     <div class="col-md-3 w3_footer_grid">
                         <h3>Information</h3>
                         <ul class="info"> 
-                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="about.html">About Us</a></li>
-                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="contact.html">Contact Us</a></li>
-                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="short-codes.html">Short Codes</a></li>
-                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="faq.html">FAQ's</a></li>
-                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Special Products</a></li>
+                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="about.jsp">About Us</a></li>
+                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="contact.jsp">Contact Us</a></li>
+                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="short-codes.jsp">Short Codes</a></li>
+                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="faq.jsp">FAQ's</a></li>
+                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.jsp">Special Products</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 w3_footer_grid">
                         <h3>Category</h3>
                         <ul class="info"> 
-                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="groceries.html">Groceries</a></li>
-                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="household.html">Household</a></li>
-                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="personalcare.html">Personal Care</a></li>
-                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="packagedfoods.html">Packaged Foods</a></li>
-                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="beverages.html">Beverages</a></li>
+                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="groceries.jsp">Groceries</a></li>
+                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="household.jsp">Household</a></li>
+                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="personalcare.jsp">Personal Care</a></li>
+                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="packagedfoods.jsp">Packaged Foods</a></li>
+                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="beverages.jsp">Beverages</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 w3_footer_grid">
                         <h3>Profile</h3>
                         <ul class="info"> 
-                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Store</a></li>
-                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="checkout.html">My Cart</a></li>
-                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="login.html">Login</a></li>
-                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="registered.html">Create Account</a></li>
+                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.jsp">Store</a></li>
+                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="checkout.jsp">My Cart</a></li>
+                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="login.jsp">Login</a></li>
+                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="registered.jsp">Create Account</a></li>
                         </ul>
 
 
