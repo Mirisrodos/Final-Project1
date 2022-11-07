@@ -229,11 +229,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="login">
             <div class="container">
                 <h2>Login Form</h2>
-
+                    
+                <!--Form dang nhap  -->
                 <div class="login-form-grids animated wow slideInUp" data-wow-delay=".5s">
-                    <form>
-                        <input type="email" placeholder="Email Address" required=" " >
-                        <input type="password" placeholder="Password" required=" " >
+                    <form action="login" method="POST">
+                        <input type="email" placeholder="Email Address" required=" " name='userEmail'>
+                        <input type="password" placeholder="Password" required=" " name='userPassword'>
                         <div class="forgot">
                             <a href="#">Forgot Password?</a>
                         </div>
