@@ -2,13 +2,29 @@
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 
 <hibernate-configuration>
-    <session-factory>
-        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/supermarketdb</property>
-        <property name="hibernate.connection.username">mirisrodos</property>
-        <property name="hibernate.connection.password">123456</property>
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+	<session-factory>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/supermarketdb</property>
+		<property name="hibernate.connection.username">mirisrodos</property>
+		<property name="hibernate.connection.password">123456</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		
+		<!-- Show SQL -->
+		<property name="show_sql">true</property>
 
-        <mapping class="com.supermarket.model.User"></mapping>
-    </session-factory>
+		<!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">1</property>
+
+		<!-- Specifying Session Context -->
+		<property name="hibernate.current_session_context_class">thread</property>
+		
+		<mapping class="com.supermarket.model.User"></mapping>
+		<mapping class="com.supermarket.model.Order"></mapping>
+		<mapping class="com.supermarket.model.OrderDetail"></mapping>
+		<mapping class="com.supermarket.model.Product"></mapping>
+		<mapping class="com.supermarket.model.Supplier"></mapping>
+		<mapping class="com.supermarket.model.Category"></mapping>
+		
+	</session-factory>
 </hibernate-configuration>

@@ -1,10 +1,40 @@
 package com.supermarket.model;
 
-public class Supplier {
-    protected int supplierID;
-    protected String supplierName;
-    protected int supplierPhone;
-    protected String supplierAddress;
+import java.io.Serializable;
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="suppliers")
+public class Supplier implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int supplierID;
+	
+	@Column(name = "supplierName")
+    private String supplierName;
+	
+	@Column(name = "supplierPhone")
+    private int supplierPhone;
+	
+	@Column(name = "supplierAddress")
+    private String supplierAddress;
+	
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "supplierID")
+	private List<Product> productCollection;
     
     public Supplier() {};
 

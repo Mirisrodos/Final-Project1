@@ -4,18 +4,55 @@
  */
 package com.supermarket.model;
 
+import java.io.Serializable;
+import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 
-public class User {
-    protected int userID;
-    protected String userEmail;
-    protected String userPassword;
-    protected String userName;
-    protected String userAddress;
-    protected int userPhone;
-    protected Date registrationDate;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "users")
+public class User implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@Column(name = "userID")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int userID;
+	
+	@Column(name = "userEmail")
+    private String userEmail;
+	
+	@Column(name = "userPassword")
+    private String userPassword;
+	
+	@Column(name = "userName")
+    private String userName;
     
-    public User() {};
+    @Column(name = "userAddress")
+    private String userAddress;
+    
+    @Column(name = "userPhone")
+    private int userPhone;
+    
+    @Column(name = "registrationDate")
+    private Date registrationDate;
+    
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "orderUserID")
+    private List<Order> orderCollection;
+
+	public User() {};
     
     public User(String userEmail, String userPassword, String userName, String userAddress, int userPhone, Date registrationDate) {
         this.userEmail = userEmail;
@@ -92,4 +129,12 @@ public class User {
     public void setRegistrationDate(Date registrationDate) {
         this.registrationDate = registrationDate;
     }
+    
+    public Collection<Order> getOrderCollection() {
+		return orderCollection;
+	}
+
+	public void setOrderCollection(List<Order> orderCollection) {
+		this.orderCollection = orderCollection;
+	}
 }

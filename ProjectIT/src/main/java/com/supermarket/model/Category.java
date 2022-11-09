@@ -1,45 +1,85 @@
 package com.supermarket.model;
 
-public class Category {
-    protected int categoryID;
-    protected String categoryName;
-    protected String decription;
+import java.io.Serializable;
+import java.util.List;
 
-    public Category() {
-    }
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
-    public Category(String categoryName, String decription) {
-        this.categoryName = categoryName;
-        this.decription = decription;
-    }
+@Entity
+@Table(name = "categories")
+public class Category implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "categoryID")
+	private int categoryID;
+	
+	@Column(name = "categoryName")
+    private String categoryName;
+	
+	@Column(name = "decription")
+    private String decription;
+	
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "productID")
+	private List<Product> productCollection;
 
-    public Category(int categoryID, String categoryName, String decription) {
-        this.categoryID = categoryID;
-        this.categoryName = categoryName;
-        this.decription = decription;
-    }
+	public Category() {
 
-    public int getCategoryID() {
-        return categoryID;
-    }
+	}
 
-    public void setCategoryID(int categoryID) {
-        this.categoryID = categoryID;
-    }
+	public Category(String categoryName, String decription, List<Product> productCollection) {
+		this.categoryName = categoryName;
+		this.decription = decription;
+		this.productCollection = productCollection;
+	}
 
-    public String getCategoryName() {
-        return categoryName;
-    }
+	public Category(int categoryID, String categoryName, String decription, List<Product> productCollection) {
+		this.categoryID = categoryID;
+		this.categoryName = categoryName;
+		this.decription = decription;
+		this.productCollection = productCollection;
+	}
 
-    public void setCategoryName(String categoryName) {
-        this.categoryName = categoryName;
-    }
+	public int getCategoryID() {
+		return categoryID;
+	}
 
-    public String getDecription() {
-        return decription;
-    }
+	public void setCategoryID(int categoryID) {
+		this.categoryID = categoryID;
+	}
 
-    public void setDecription(String decription) {
-        this.decription = decription;
-    }
+	public String getCategoryName() {
+		return categoryName;
+	}
+
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
+	}
+
+	public String getDecription() {
+		return decription;
+	}
+
+	public void setDecription(String decription) {
+		this.decription = decription;
+	}
+
+	public List<Product> getproductCollection() {
+		return productCollection;
+	}
+
+	public void setproductCollection(List<Product> productCollection) {
+		this.productCollection = productCollection;
+	}
 }

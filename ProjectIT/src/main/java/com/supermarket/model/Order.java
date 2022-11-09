@@ -1,32 +1,134 @@
 package com.supermarket.model;
 
+import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
-public class Order {
-    protected int orderID;
-    protected int orderUserID;
-    protected int orderAmount;
-    protected String orderAddress;
-    protected Date createDate;
-    protected Date orderDate;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
-    public Order() {
-    }
+@Entity
+@Table(name="orders")
+public class Order implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@Column(name = "orderID")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int orderID;
+	
+	@Column(name = "orderAmount")
+	private int orderAmount;
+	
+	@Column(name = "orderAddress")
+	private String orderAddress;
+	
+	@Column(name = "createDate")
+	private Date createDate;
+	
+	@Column(name = "orderDate")
+	private Date orderDate;
+    
+	@JoinColumn(name="orderUserID", referencedColumnName="userID")
+	@ManyToOne
+	private User orderUserID;
+	
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "detailOrderID")
+	private List<OrderDetail> orderDetailCollection;
 
-    public Order(int orderUserID, int orderAmount, String orderAddress, Date createDate, Date orderDate) {
-        this.orderUserID = orderUserID;
-        this.orderAmount = orderAmount;
-        this.orderAddress = orderAddress;
-        this.createDate = createDate;
-        this.orderDate = orderDate;
-    }
+	public Order() {
+		
+	}
 
-    public Order(int orderID, int orderUserID, int orderAmount, String orderAddress, Date createDate, Date orderDate) {
-        this.orderID = orderID;
-        this.orderUserID = orderUserID;
-        this.orderAmount = orderAmount;
-        this.orderAddress = orderAddress;
-        this.createDate = createDate;
-        this.orderDate = orderDate;
-    }
+	public Order(int orderAmount, String orderAddress, Date createDate, Date orderDate, User orderUserID,
+			List<OrderDetail> orderDetailCollection) {
+		super();
+		this.orderAmount = orderAmount;
+		this.orderAddress = orderAddress;
+		this.createDate = createDate;
+		this.orderDate = orderDate;
+		this.orderUserID = orderUserID;
+		this.orderDetailCollection = orderDetailCollection;
+	}
+
+	public Order(int orderID, int orderAmount, String orderAddress, Date createDate, Date orderDate, User orderUserID,
+			List<OrderDetail> orderDetailCollection) {
+		super();
+		this.orderID = orderID;
+		this.orderAmount = orderAmount;
+		this.orderAddress = orderAddress;
+		this.createDate = createDate;
+		this.orderDate = orderDate;
+		this.orderUserID = orderUserID;
+		this.orderDetailCollection = orderDetailCollection;
+	}
+
+	public int getOrderID() {
+		return orderID;
+	}
+
+	public void setOrderID(int orderID) {
+		this.orderID = orderID;
+	}
+
+	public int getOrderAmount() {
+		return orderAmount;
+	}
+
+	public void setOrderAmount(int orderAmount) {
+		this.orderAmount = orderAmount;
+	}
+
+	public String getOrderAddress() {
+		return orderAddress;
+	}
+
+	public void setOrderAddress(String orderAddress) {
+		this.orderAddress = orderAddress;
+	}
+
+	public Date getCreateDate() {
+		return createDate;
+	}
+
+	public void setCreateDate(Date createDate) {
+		this.createDate = createDate;
+	}
+
+	public Date getOrderDate() {
+		return orderDate;
+	}
+
+	public void setOrderDate(Date orderDate) {
+		this.orderDate = orderDate;
+	}
+
+	public User getOrderUserID() {
+		return orderUserID;
+	}
+
+	public void setOrderUserID(User orderUserID) {
+		this.orderUserID = orderUserID;
+	}
+
+	public List<OrderDetail> getOrderDetailCollection() {
+		return orderDetailCollection;
+	}
+
+	public void setOrderDetailCollection(List<OrderDetail> orderDetailCollection) {
+		this.orderDetailCollection = orderDetailCollection;
+	}
+
+	
 }
