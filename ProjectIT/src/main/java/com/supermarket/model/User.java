@@ -29,7 +29,7 @@ public class User implements Serializable{
 	@Id
 	@Column(name = "userID")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int userID;
+    private Integer userID;
 	
 	@Column(name = "userEmail")
     private String userEmail;
@@ -44,7 +44,7 @@ public class User implements Serializable{
     private String userAddress;
     
     @Column(name = "userPhone")
-    private int userPhone;
+    private Integer userPhone;
     
     @Column(name = "registrationDate")
     private Date registrationDate;
@@ -54,7 +54,7 @@ public class User implements Serializable{
 
 	public User() {};
     
-    public User(String userEmail, String userPassword, String userName, String userAddress, int userPhone, Date registrationDate) {
+    public User(String userEmail, String userPassword, String userName, String userAddress, Integer userPhone, Date registrationDate) {
         this.userEmail = userEmail;
         this.userPassword = userPassword;
         this.userName = userName;
@@ -64,7 +64,7 @@ public class User implements Serializable{
     }
 
 
-    public User(int userID, String userEmail, String userPassword, String userName, String userAddress, int userPhone, Date registrationDate) {
+    public User(Integer userID, String userEmail, String userPassword, String userName, String userAddress, Integer userPhone, Date registrationDate) {
         this.userID = userID;
         this.userEmail = userEmail;
         this.userPassword = userPassword;
@@ -74,11 +74,11 @@ public class User implements Serializable{
         this.registrationDate = registrationDate;
     }
 
-    public int getUserID() {
+    public Integer getUserID() {
         return userID;
     }
 
-    public void setUserID(int userID) {
+    public void setUserID(Integer userID) {
         this.userID = userID;
     }
 
@@ -114,11 +114,11 @@ public class User implements Serializable{
         this.userAddress = userAddress;
     }
 
-    public int getUserPhone() {
+    public Integer getUserPhone() {
         return userPhone;
     }
 
-    public void setUserPhone(int userPhone) {
+    public void setUserPhone(Integer userPhone) {
         this.userPhone = userPhone;
     }
 

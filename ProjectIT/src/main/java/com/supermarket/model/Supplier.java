@@ -22,13 +22,13 @@ public class Supplier implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int supplierID;
+	private Integer supplierID;
 	
 	@Column(name = "supplierName")
     private String supplierName;
 	
 	@Column(name = "supplierPhone")
-    private int supplierPhone;
+    private Integer supplierPhone;
 	
 	@Column(name = "supplierAddress")
     private String supplierAddress;
@@ -38,24 +38,24 @@ public class Supplier implements Serializable{
     
     public Supplier() {};
 
-    public Supplier(String supplierName, int supplierPhone, String supplierAddress) {
+    public Supplier(String supplierName, Integer supplierPhone, String supplierAddress) {
         this.supplierName = supplierName;
         this.supplierPhone = supplierPhone;
         this.supplierAddress = supplierAddress;
     }
     
-    public Supplier(int supplierID, String supplierName, int supplierPhone, String supplierAddress) {
+    public Supplier(Integer supplierID, String supplierName, Integer supplierPhone, String supplierAddress) {
         this.supplierID = supplierID;
         this.supplierName = supplierName;
         this.supplierPhone = supplierPhone;
         this.supplierAddress = supplierAddress;
     }
 
-    public int getSupplierID() {
+    public Integer getSupplierID() {
         return supplierID;
     }
 
-    public void setSupplierID(int supplierID) {
+    public void setSupplierID(Integer supplierID) {
         this.supplierID = supplierID;
     }
 
@@ -67,11 +67,11 @@ public class Supplier implements Serializable{
         this.supplierName = supplierName;
     }
 
-    public int getSupplierPhone() {
+    public Integer getSupplierPhone() {
         return supplierPhone;
     }
 
-    public void setSupplierPhone(int supplierPhone) {
+    public void setSupplierPhone(Integer supplierPhone) {
         this.supplierPhone = supplierPhone;
     }
 

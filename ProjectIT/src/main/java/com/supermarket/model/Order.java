@@ -26,10 +26,10 @@ public class Order implements Serializable{
 	@Id
 	@Column(name = "orderID")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int orderID;
+	private Integer orderID;
 	
 	@Column(name = "orderAmount")
-	private int orderAmount;
+	private Integer orderAmount;
 	
 	@Column(name = "orderAddress")
 	private String orderAddress;
@@ -51,7 +51,7 @@ public class Order implements Serializable{
 		
 	}
 
-	public Order(int orderAmount, String orderAddress, Date createDate, Date orderDate, User orderUserID,
+	public Order(Integer orderAmount, String orderAddress, Date createDate, Date orderDate, User orderUserID,
 			List<OrderDetail> orderDetailCollection) {
 		super();
 		this.orderAmount = orderAmount;
@@ -62,7 +62,7 @@ public class Order implements Serializable{
 		this.orderDetailCollection = orderDetailCollection;
 	}
 
-	public Order(int orderID, int orderAmount, String orderAddress, Date createDate, Date orderDate, User orderUserID,
+	public Order(Integer orderID, Integer orderAmount, String orderAddress, Date createDate, Date orderDate, User orderUserID,
 			List<OrderDetail> orderDetailCollection) {
 		super();
 		this.orderID = orderID;
@@ -74,19 +74,19 @@ public class Order implements Serializable{
 		this.orderDetailCollection = orderDetailCollection;
 	}
 
-	public int getOrderID() {
+	public Integer getOrderID() {
 		return orderID;
 	}
 
-	public void setOrderID(int orderID) {
+	public void setOrderID(Integer orderID) {
 		this.orderID = orderID;
 	}
 
-	public int getOrderAmount() {
+	public Integer getOrderAmount() {
 		return orderAmount;
 	}
 
-	public void setOrderAmount(int orderAmount) {
+	public void setOrderAmount(Integer orderAmount) {
 		this.orderAmount = orderAmount;
 	}
 

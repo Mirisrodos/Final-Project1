@@ -23,7 +23,7 @@ public class Category implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "categoryID")
-	private int categoryID;
+	private Integer categoryID;
 	
 	@Column(name = "categoryName")
     private String categoryName;
@@ -44,18 +44,18 @@ public class Category implements Serializable{
 		this.productCollection = productCollection;
 	}
 
-	public Category(int categoryID, String categoryName, String decription, List<Product> productCollection) {
+	public Category(Integer categoryID, String categoryName, String decription, List<Product> productCollection) {
 		this.categoryID = categoryID;
 		this.categoryName = categoryName;
 		this.decription = decription;
 		this.productCollection = productCollection;
 	}
 
-	public int getCategoryID() {
+	public Integer getCategoryID() {
 		return categoryID;
 	}
 
-	public void setCategoryID(int categoryID) {
+	public void setCategoryID(Integer categoryID) {
 		this.categoryID = categoryID;
 	}
 

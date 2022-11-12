@@ -26,16 +26,16 @@ public class Product implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "productID")
-    private int productID;
+    private Integer productID;
 	
 	@Column(name = "productName")
     private String productName;
 	
 	@Column(name = "quantity")
-    private int quantity;
+    private Integer quantity;
 	
 	@Column(name = "rating")
-    private int rating;
+    private Integer rating;
 	
 	@Column(name = "updateDate")
     private Date updateDate;
@@ -61,7 +61,7 @@ public class Product implements Serializable{
     	
     }
 
-	public Product(String productName, int quantity, int rating, Date updateDate, boolean isSoldout,
+	public Product(String productName, Integer quantity, Integer rating, Date updateDate, boolean isSoldout,
 			String productImage, List<OrderDetail> orderDetailCollection, Supplier supplierID, Category categoryID) {
 		super();
 		this.productName = productName;
@@ -75,7 +75,7 @@ public class Product implements Serializable{
 		this.categoryID = categoryID;
 	}
 
-	public Product(int productID, String productName, int quantity, int rating, Date updateDate, boolean isSoldout,
+	public Product(Integer productID, String productName, Integer quantity, Integer rating, Date updateDate, boolean isSoldout,
 			String productImage, List<OrderDetail> orderDetailCollection, Supplier supplierID, Category categoryID) {
 		super();
 		this.productID = productID;
@@ -90,11 +90,11 @@ public class Product implements Serializable{
 		this.categoryID = categoryID;
 	}
 
-	public int getProductID() {
+	public Integer getProductID() {
 		return productID;
 	}
 
-	public void setProductID(int productID) {
+	public void setProductID(Integer productID) {
 		this.productID = productID;
 	}
 
@@ -106,19 +106,19 @@ public class Product implements Serializable{
 		this.productName = productName;
 	}
 
-	public int getQuantity() {
+	public Integer getQuantity() {
 		return quantity;
 	}
 
-	public void setQuantity(int quantity) {
+	public void setQuantity(Integer quantity) {
 		this.quantity = quantity;
 	}
 
-	public int getRating() {
+	public Integer getRating() {
 		return rating;
 	}
 
-	public void setRating(int rating) {
+	public void setRating(Integer rating) {
 		this.rating = rating;
 	}
 
