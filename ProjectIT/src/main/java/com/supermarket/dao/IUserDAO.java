@@ -4,8 +4,9 @@
  */
 package com.supermarket.dao;
 
-import com.supermarket.model.User;
 import java.util.List;
+
+import com.supermarket.model.entity.User;
 
 public interface IUserDAO {
     public List<User> getAllUser();

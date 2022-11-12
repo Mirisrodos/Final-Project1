@@ -2,7 +2,8 @@ package com.supermarket.dao.impl;
 
 import com.supermarket.connection.DBConnection;
 import com.supermarket.dao.IUserDAO;
-import com.supermarket.model.User;
+import com.supermarket.model.entity.User;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

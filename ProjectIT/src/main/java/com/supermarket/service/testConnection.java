@@ -6,12 +6,12 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
-import com.supermarket.model.Category;
-import com.supermarket.model.Order;
-import com.supermarket.model.OrderDetail;
-import com.supermarket.model.Product;
-import com.supermarket.model.Supplier;
-import com.supermarket.model.User;
+import com.supermarket.model.entity.Category;
+import com.supermarket.model.entity.Order;
+import com.supermarket.model.entity.OrderDetail;
+import com.supermarket.model.entity.Product;
+import com.supermarket.model.entity.Supplier;
+import com.supermarket.model.entity.User;
 import com.supermarket.util.HibernateUtils;
 
 public class testConnection {
