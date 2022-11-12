@@ -19,12 +19,13 @@
 		<!-- Specifying Session Context -->
 		<property name="hibernate.current_session_context_class">thread</property>
 		
-		<mapping class="com.supermarket.model.User"></mapping>
-		<mapping class="com.supermarket.model.Order"></mapping>
-		<mapping class="com.supermarket.model.OrderDetail"></mapping>
-		<mapping class="com.supermarket.model.Product"></mapping>
-		<mapping class="com.supermarket.model.Supplier"></mapping>
-		<mapping class="com.supermarket.model.Category"></mapping>
+		<!-- Mapping -->
+		<mapping class="com.supermarket.model.entity.Users"></mapping>
+		<mapping class="com.supermarket.model.entity.Suppliers"></mapping>
+		<mapping class="com.supermarket.model.entity.Products"></mapping>
+		<mapping class="com.supermarket.model.entity.Orders"></mapping>
+		<mapping class="com.supermarket.model.entity.Orderdetails"></mapping>
+		<mapping class="com.supermarket.model.entity.Categories"></mapping>
 		
 	</session-factory>
 </hibernate-configuration>

@@ -1,4 +1,4 @@
-package com.supermarket.service;
+package Connection;
 
 import java.util.Date;
 
@@ -6,12 +6,12 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
-import com.supermarket.model.entity.Category;
-import com.supermarket.model.entity.Order;
-import com.supermarket.model.entity.OrderDetail;
-import com.supermarket.model.entity.Product;
-import com.supermarket.model.entity.Supplier;
-import com.supermarket.model.entity.User;
+import com.supermarket.model.entity.Categories;
+import com.supermarket.model.entity.Orders;
+import com.supermarket.model.entity.Orderdetails;
+import com.supermarket.model.entity.Products;
+import com.supermarket.model.entity.Suppliers;
+import com.supermarket.model.entity.Users;
 import com.supermarket.util.HibernateUtils;
 
 public class testConnection {
@@ -23,8 +23,7 @@ public class testConnection {
 		Session session = factory.openSession();
 		Transaction transaction = session.beginTransaction();
 		
-		Category a = session.load(Category.class, 1);
-		
+		Categories a = session.load(Categories.class, 1);
 		
 		
 		transaction.commit();
