@@ -57,7 +57,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <p>SALE UP TO 70% OFF. USE CODE "SALE70%" . <a href="products.jsp">SHOP NOW</a></p>
         </div>
         <div class="agile-login">
-            <c:set var="Id" scope="page" value="<%= session.getAttribute("userID")%>"></c:set>
+            <c:set var="Id" scope="page" value='<%= session.getAttribute("userID")%>'></c:set>
             <c:if test="${Id} == 1">
                 <ul>
                     <li><a href="registered.jsp"> Create Account </a></li>
