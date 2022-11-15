@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.supermarket.model.dao.UserDAO;
 
@@ -43,13 +44,16 @@ public class LoginUserServlet extends HttpServlet {
 
     private void checkAccount(HttpServletRequest request, HttpServletResponse response)
     throws Exception {
-        String username = request.getParameter("userEmail");
+        String email = request.getParameter("userEmail");
         String password = request.getParameter("userPassword");
 
-        if (loginDAO.isValidate(username, password)) {
+        if (loginDAO.isValidate(email, password)) {
 //        	Thêm session và các tính năng Attribute khi đăng nhập thành công
-            RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
-            dispatcher.forward(request, response);
+            HttpSession session = request.getSession();
+            session.setAttribute("UserID", loginDAO.selectByEmail(email).getUserId());
+            session.setAttribute("username", loginDAO.selectByEmail(email).getUserName());
+
+            response.sendRedirect("index.jsp");
         } else {
 //        	Thêm các Attribute khi đăng nhập thất bại để hiện ra thông báo xác nhận là
 //        	tài khoản và mật khẩu

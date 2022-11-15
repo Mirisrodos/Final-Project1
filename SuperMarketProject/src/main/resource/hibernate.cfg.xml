@@ -20,9 +20,6 @@
 		<property name="hibernate.current_session_context_class">thread</property>
 
 		<!-- Mapping -->
-		<!-- Mapping -->
-		<!-- Mapping -->
-		<!-- Mapping -->
 		<mapping class="com.supermarket.model.entity.Users"></mapping>
 		<mapping class="com.supermarket.model.entity.Suppliers"></mapping>
 		<mapping class="com.supermarket.model.entity.Products"></mapping>

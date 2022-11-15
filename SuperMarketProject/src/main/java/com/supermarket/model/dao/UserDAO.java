@@ -27,6 +27,24 @@ public class UserDAO extends HibernateDAO<Users> implements GenericDAO<Users> {
 		// TODO Auto-generated method stub
 		return super.select(Users.class, id);
 	}
+
+	public Users selectByEmail(String email) {
+		Transaction transaction = null;
+		Users user;
+		try (Session session = factory.openSession()) {
+			transaction = session.beginTransaction();
+			user = (Users) session.createQuery("FROM Users U WHERE U.userEmail = :userEmail")
+					.setParameter("userEmail", email).uniqueResult();
+			transaction.commit();
+			return user;
+		} catch (Exception e) {
+			if (transaction != null) {
+				transaction.rollback();
+			}
+			e.printStackTrace();
+		}
+		return null;
+	}
 	
 	public boolean isExist(String userEmail) {
 		Transaction transaction = null;
