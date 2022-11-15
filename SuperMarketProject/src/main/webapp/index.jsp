@@ -1,11 +1,6 @@
-<!--
-author: W3layouts
-author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<%@ page language="java" contentType="text/html; charset=UTF-8"	pageEncoding="UTF-8"%>
+<%-- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> --%>
 <!DOCTYPE html>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
     <title>Super Market an Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Home ::
@@ -57,14 +52,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <p>SALE UP TO 70% OFF. USE CODE "SALE70%" . <a href="products.jsp">SHOP NOW</a></p>
         </div>
         <div class="agile-login">
-            <c:set var="Id" scope="page" value='<%= session.getAttribute("userID")%>'></c:set>
+           <!-- <c:set var="Id" scope="page" value='<%= session.getAttribute("userID")%>'></c:set>
             <c:if test="${Id} != null">
                 <ul>
                     <li><a href="registered.jsp"> Create Account </a></li>
                     <li><a href="login.jsp">Login</a></li>
                     <li><a href="contact.jsp">Help</a></li>
                 </ul>
-            </c:if>
+            </c:if> --> 
 
         </div>
         <div class="product_list_header">
@@ -1283,7 +1278,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="footer-copy">
 
         <div class="container">
-            <p>� 2017 Super Market. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+            <p>ï¿½ 2017 Super Market. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
         </div>
     </div>
 

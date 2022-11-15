@@ -2,7 +2,6 @@ package com.supermarket.controller;
 
 import java.io.IOException;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -11,10 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.supermarket.model.dao.UserDAO;
-
-/**
- * @email Ramesh Fadatare
- */
 
 @WebServlet("/login")
 public class LoginUserServlet extends HttpServlet {
