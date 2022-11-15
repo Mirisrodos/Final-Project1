@@ -6,7 +6,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
-import com.supermarket.model.entity.Users;
+import com.supermarket.model.entity.*;
 import com.supermarket.util.HibernateUtils;
 import com.supermarket.model.dao.*;
 
@@ -17,14 +17,11 @@ public class testApp {
 		Date date = new Date(2002-12-12);
 		Users user = new Users("truong@gmail.com", "1231231", "jacob", "Japan", "12312321",
 				date);
-		UserDAO dao = new UserDAO();
+		ProductDAO dao = new ProductDAO();
 	
-		Users a = dao.select(3);
+		Products a = dao.select(3);			
 		
-		dao.delete(a);
-		
-		
-		System.out.println(a.getUserAddress());
+		System.out.println(a.getProductName());
 		System.out.println("Finally");
 	}
 }
