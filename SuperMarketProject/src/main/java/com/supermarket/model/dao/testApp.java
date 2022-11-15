@@ -19,9 +19,9 @@ public class testApp {
 				date);
 		ProductDAO dao = new ProductDAO();
 	
-		Products a = dao.select(3);			
+		Products a = dao.select(1);
 		
-		System.out.println(a.getProductName());
+		System.out.println();
 		System.out.println("Finally");
 	}
 }

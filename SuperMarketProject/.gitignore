@@ -2,3 +2,4 @@
 /.idea/*
 /target/
 /SuperMarketProject.iml
+/src/main/resource/hibernate.cfg.xml
