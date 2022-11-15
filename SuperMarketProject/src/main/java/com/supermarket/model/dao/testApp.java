@@ -1,6 +1,7 @@
 package com.supermarket.model.dao;
 
 import java.util.Date;
+import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -15,11 +16,14 @@ public class testApp {
 
 	public static void main(String[] args) {
 		Date date = new Date(2002-12-12);
-		Users user = new Users("truong@gmail.com", "1231231", "jacob", "Japan", "12312321",
-				date);
-		ProductDAO dao = new ProductDAO();
-	
-		Products a = dao.select(1);
+		UserDAO udao = new UserDAO();
+		ProductDAO pdao = new ProductDAO();
+		
+//		System.out.println(udao.selectByEmail("hoa@gmail.com").getUserAddress());
+//		System.out.println(pdao.select(2).getProductName());
+		List<Products> list = pdao.selectByCategory(1);
+		
+//		System.out.println(list.isEmpty());
 		
 		System.out.println();
 		System.out.println("Finally");

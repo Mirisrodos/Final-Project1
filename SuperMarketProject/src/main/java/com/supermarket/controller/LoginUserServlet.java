@@ -45,7 +45,7 @@ public class LoginUserServlet extends HttpServlet {
         if (loginDAO.isValidate(email, password)) {
 //        	Thêm session và các tính năng Attribute khi đăng nhập thành công
             HttpSession session = request.getSession();
-            session.setAttribute("UserID", loginDAO.selectByEmail(email).getUserId());
+            session.setAttribute("userid", loginDAO.selectByEmail(email).getUserId());
             session.setAttribute("username", loginDAO.selectByEmail(email).getUserName());
 
             response.sendRedirect("index.jsp");
