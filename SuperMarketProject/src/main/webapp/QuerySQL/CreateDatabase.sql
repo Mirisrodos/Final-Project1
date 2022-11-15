@@ -14,7 +14,7 @@ CREATE TABLE suppliers (
 CREATE TABLE categories (
 	categoryID INT NOT NULL AUTO_INCREMENT,
 	categoryName NVARCHAR(20) NOT NULL,
-	descriptions NVARCHAR(100),
+	description NVARCHAR(100),
 	
 	PRIMARY KEY (categoryID)
 );

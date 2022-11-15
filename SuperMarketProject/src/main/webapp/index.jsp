@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"	pageEncoding="UTF-8"%>
-<%-- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> --%>
+<%--<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>--%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,13 +53,13 @@
         </div>
         <div class="agile-login">
            <!-- <c:set var="Id" scope="page" value='<%= session.getAttribute("userID")%>'></c:set>
-            <c:if test="${Id} != null">
+            <c:if test="${Id} != null"> --> 
                 <ul>
                     <li><a href="registered.jsp"> Create Account </a></li>
                     <li><a href="login.jsp">Login</a></li>
                     <li><a href="contact.jsp">Help</a></li>
                 </ul>
-            </c:if> --> 
+          <!--  </c:if> --> 
 
         </div>
         <div class="product_list_header">

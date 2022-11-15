@@ -26,7 +26,7 @@ public class Categories implements java.io.Serializable {
 	
 	private int categoryId;
 	private String categoryName;
-	private String decription;
+	private String description;
 	private Set<Products> productses = new HashSet<Products>(0);
 
 	public Categories() {
@@ -37,10 +37,10 @@ public class Categories implements java.io.Serializable {
 		this.categoryName = categoryName;
 	}
 
-	public Categories(int categoryId, String categoryName, String decription, Set<Products> productses) {
+	public Categories(int categoryId, String categoryName, String description, Set<Products> productses) {
 		this.categoryId = categoryId;
 		this.categoryName = categoryName;
-		this.decription = decription;
+		this.description = description;
 		this.productses = productses;
 	}
 
@@ -64,13 +64,13 @@ public class Categories implements java.io.Serializable {
 		this.categoryName = categoryName;
 	}
 
-	@Column(name = "decription", length = 100)
-	public String getDecription() {
-		return this.decription;
+	@Column(name = "description", length = 100)
+	public String getdescription() {
+		return this.description;
 	}
 
-	public void setDecription(String decription) {
-		this.decription = decription;
+	public void setdescription(String description) {
+		this.description = description;
 	}
 
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "categories")
