@@ -16,8 +16,6 @@
 		<!-- Show SQL -->
 		<property name="show_sql">true</property>
 
-		<!-- JDBC connection pool (use the built-in) -->
-
 		<!-- Specifying Session Context -->
 		<property name="hibernate.current_session_context_class">thread</property>
 		
