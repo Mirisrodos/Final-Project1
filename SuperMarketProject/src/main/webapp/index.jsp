@@ -58,7 +58,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
         <div class="agile-login">
             <c:set var="Id" scope="page" value='<%= session.getAttribute("userID")%>'></c:set>
-            <c:if test="${Id} == 1">
+            <c:if test="${Id} != null">
                 <ul>
                     <li><a href="registered.jsp"> Create Account </a></li>
                     <li><a href="login.jsp">Login</a></li>
