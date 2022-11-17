@@ -23,8 +23,8 @@ SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS `categories`;
 CREATE TABLE `categories`  (
   `categoryID` int(0) NOT NULL AUTO_INCREMENT,
-  `categoryName` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `description` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `categoryName` nvarchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `description` nvarchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`categoryID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
@@ -70,7 +70,7 @@ CREATE TABLE `orders`  (
   `orderID` int(0) NOT NULL AUTO_INCREMENT,
   `orderUserID` int(0) NOT NULL,
   `orderAmount` int(0) NOT NULL,
-  `orderAddress` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `orderAddress` nvarchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `createDate` date NOT NULL,
   `orderDate` date NOT NULL,
   PRIMARY KEY (`orderID`) USING BTREE,
@@ -93,7 +93,7 @@ CREATE TABLE `products`  (
   `productID` int(0) NOT NULL AUTO_INCREMENT,
   `supplierID` int(0) NOT NULL,
   `categoryID` int(0) NOT NULL,
-  `productName` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `productName` nvarchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `quantity` int(0) NOT NULL,
   `rating` int(0) NOT NULL,
   `updateDate` date NOT NULL,
@@ -165,7 +165,7 @@ INSERT INTO `products` VALUES (49, 4, 6, 'Fruit Nut', 50, 5, '2022-07-20', b'0',
 DROP TABLE IF EXISTS `suppliers`;
 CREATE TABLE `suppliers`  (
   `supplierID` int(0) NOT NULL AUTO_INCREMENT,
-  `supplierName` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `supplierName` nvarchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `phone` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `address` char(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   PRIMARY KEY (`supplierID`) USING BTREE
@@ -188,8 +188,8 @@ CREATE TABLE `users`  (
   `userID` int(0) NOT NULL AUTO_INCREMENT,
   `userEmail` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `userPassword` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `userName` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `userAddress` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `userName` nvarchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `userAddress` nvarchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `userPhone` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `registrationDate` date NOT NULL,
   PRIMARY KEY (`userID`) USING BTREE

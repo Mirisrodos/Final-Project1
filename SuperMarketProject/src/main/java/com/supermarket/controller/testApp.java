@@ -20,12 +20,8 @@ public class testApp {
         SessionFactory factory = HibernateUtils.getSessionFactory();
         Transaction transaction = null;
 		try (Session session = factory.openSession()) {
-			transaction = session.beginTransaction();
-//			Loi doan nay
 			Query query = session.createQuery("SELECT P Product");
-
 			List<Products> list = query.list();
-			transaction.commit();
 		} catch (Exception e) {
 			if (transaction != null) {
 				transaction.rollback();

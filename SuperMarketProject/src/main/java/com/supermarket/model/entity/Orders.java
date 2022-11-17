@@ -88,7 +88,7 @@ public class Orders implements java.io.Serializable {
 		this.orderAmount = orderAmount;
 	}
 
-	@Column(name = "orderAddress", nullable = false, length = 50)
+	@Column(name = "orderAddress", nullable = false, length = 50, columnDefinition = "nvarchar")
 	public String getOrderAddress() {
 		return this.orderAddress;
 	}
