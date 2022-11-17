@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,7 +60,7 @@
 			<div class="agile-login">
 				<ul>
 					<c:if test="${empty sessionScope.userid}">
-						<li><a href="registered.jsp"> Create Account </a></li>
+						<li><a href="registered.jsp"> Create Account</a></li>
 						<li><a href="login.jsp">Login</a></li>
 						<li><a href="contact.jsp">Help</a></li>
 						<li><a href="#">${sessionScope["userid"]}</a></li>
