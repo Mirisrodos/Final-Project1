@@ -25,7 +25,7 @@
                         <div class="forgot">
                             <a href="#">Forgot Password?</a>
                         </div>
-                        <input type="submit" value="submit">
+                        <input type="submit" value="Submit">
                     </form>
                 </div>
                 <h4>For New People</h4>
