@@ -1,6 +1,7 @@
 package com.supermarket.controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,10 +17,10 @@ public class LoginUserServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private UserDAO loginDAO = null;
 
-    @Override
+    /*@Override
     public void init() {
-        loginDAO = new UserDAO();
-    }
+        loginDAO = new UserDAO();      
+    }*/
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -31,7 +32,8 @@ public class LoginUserServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         try {
-        	checkAccount(request, response);
+        	checkAccount(request, response);    	
+        	getServletContext().getRequestDispatcher("/login.jsp").forward(request, response);
         } catch (Exception e) {
             e.printStackTrace();
         }
