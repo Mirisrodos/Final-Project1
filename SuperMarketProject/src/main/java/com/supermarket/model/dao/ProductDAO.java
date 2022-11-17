@@ -3,12 +3,9 @@ package com.supermarket.model.dao;
 import java.util.List;
 
 import org.hibernate.Session;
-import org.hibernate.Transaction;
-
 import com.supermarket.model.entity.Products;
-import com.supermarket.model.entity.Users;
 
-public class ProductDAO extends HibernateDAO<Products> implements GenericDAO<Products>  {
+public class ProductDAO extends HibernateDAO<Products> implements GenericDAO<Products> {
 
 	@Override
 	public Products insert(Products entity) {
@@ -28,26 +25,18 @@ public class ProductDAO extends HibernateDAO<Products> implements GenericDAO<Pro
 	@Override
 	public Products select(int id) {
 		return super.select(Products.class, id);
-	}	
-	
-	public List<Products> selectByCategory(Integer categoryid){
-		Transaction transaction = null;
-		List<Products> list;
+	}
+
+	public List<Products> selectByCategory(Integer categoryid) {
+		List<Products> product = null;
+		String HQL = "select p from Products p inner join p.categories c where c.categoryId= :id";
 		try (Session session = factory.openSession()) {
-			transaction = session.beginTransaction();
-//			Bug xem lai createQuery
-			list = (List<Products>) session.createQuery("FROM Products p WHERE p.categoryID = :id")
-					.setParameter("id", categoryid).getResultList();
-			transaction.commit();
-			return list;
+			product = session.createQuery(HQL).setParameter("id", categoryid).list();
+			return product;
 		} catch (Exception e) {
-			if (transaction != null) {
-				transaction.rollback();
-			}
 			e.printStackTrace();
 		}
-		
 		return null;
 	}
-	
+
 }
