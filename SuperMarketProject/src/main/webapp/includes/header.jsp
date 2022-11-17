@@ -70,6 +70,7 @@
 					<c:if test="${!empty sessionScope.userid}">
 					<!-- Them icon cham xanh hien thi dang hoat dong -->
 						<li><a href="#"><i class='fas fa-circle' style='font-size:8px;color: #1bef31'>&nbsp;&nbsp;<b style='font-size:14px'>Online</b></i>&nbsp;&nbsp;${sessionScope.username}</a></li>										
+						<a href="logout" style='padding_left=20px'>Logout</a>
 					</c:if>
 				</ul>				
 			</div>
@@ -77,7 +78,6 @@
 				<form action="#" method="post" class="last">
 					<input type="hidden" name="cmd" value="_cart"> <input
 						type="hidden" name="display" value="1">
-					<a href="#" style='padding_left=20px'>Logout</a>
 					<button class="w3view-cart" type="submit" name="submit" value="">
 						<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
 					</button>					
