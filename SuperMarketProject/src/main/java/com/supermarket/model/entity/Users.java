@@ -103,7 +103,7 @@ public class Users implements java.io.Serializable {
 		this.userPassword = userPassword;
 	}
 
-	@Column(name = "userName", nullable = false, length = 30)
+	@Column(name = "userName", nullable = false, length = 30, columnDefinition = "nvarchar")
 	public String getUserName() {
 		return this.userName;
 	}
@@ -112,7 +112,7 @@ public class Users implements java.io.Serializable {
 		this.userName = userName;
 	}
 
-	@Column(name = "userAddress", nullable = false, length = 50)
+	@Column(name = "userAddress", nullable = false, length = 50, columnDefinition = "nvarchar")
 	public String getUserAddress() {
 		return this.userAddress;
 	}

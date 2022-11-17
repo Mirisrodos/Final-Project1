@@ -36,7 +36,7 @@ public class ProductDAO extends HibernateDAO<Products> implements GenericDAO<Pro
 		try (Session session = factory.openSession()) {
 			transaction = session.beginTransaction();
 //			Bug xem lai createQuery
-			list = (List<Products>) session.createQuery("FROM Products P WHERE P.categoryID = :id")
+			list = (List<Products>) session.createQuery("FROM Products p WHERE p.categoryID = :id")
 					.setParameter("id", categoryid).getResultList();
 			transaction.commit();
 			return list;

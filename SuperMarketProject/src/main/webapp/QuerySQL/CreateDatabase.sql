@@ -5,8 +5,8 @@ USE supermarketdb;
 CREATE TABLE suppliers (
 	supplierID INT NOT NULL AUTO_INCREMENT,
 	supplierName NVARCHAR(20) NOT NULL,
-	phone VARCHAR(10) NOT NULL,
-	address CHAR(50) NOT NULL,
+	phone NVARCHAR(10) NOT NULL,
+	address NVARCHAR(50) NOT NULL,
 	
 	PRIMARY KEY (supplierID)
 );

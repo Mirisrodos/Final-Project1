@@ -96,7 +96,7 @@ public class Products implements java.io.Serializable {
 		this.suppliers = suppliers;
 	}
 
-	@Column(name = "productName", nullable = false)
+	@Column(name = "productName", nullable = false, columnDefinition = "nvarchar")
 	public String getProductName() {
 		return this.productName;
 	}

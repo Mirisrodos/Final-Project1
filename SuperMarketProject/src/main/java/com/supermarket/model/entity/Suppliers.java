@@ -26,7 +26,7 @@ public class Suppliers implements java.io.Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private Integer supplierId;
-	private String upplierName;
+	private String supplierName;
 	private String phone;
 	private String address;
 	private Set<Products> productses = new HashSet<Products>(0);
@@ -34,14 +34,14 @@ public class Suppliers implements java.io.Serializable {
 	public Suppliers() {
 	}
 
-	public Suppliers(String upplierName, String phone, String address) {
-		this.upplierName = upplierName;
+	public Suppliers(String supplierName, String phone, String address) {
+		this.supplierName = supplierName;
 		this.phone = phone;
 		this.address = address;
 	}
 
-	public Suppliers(String upplierName, String phone, String address, Set<Products> productses) {
-		this.upplierName = upplierName;
+	public Suppliers(String supplierName, String phone, String address, Set<Products> productses) {
+		this.supplierName = supplierName;
 		this.phone = phone;
 		this.address = address;
 		this.productses = productses;
@@ -58,13 +58,13 @@ public class Suppliers implements java.io.Serializable {
 		this.supplierId = supplierId;
 	}
 
-	@Column(name = "upplierName", nullable = false, length = 20)
-	public String getUpplierName() {
-		return this.upplierName;
+	@Column(name = "supplierName", nullable = false, length = 20, columnDefinition = "nvarchar")
+	public String getsupplierName() {
+		return this.supplierName;
 	}
 
-	public void setUpplierName(String upplierName) {
-		this.upplierName = upplierName;
+	public void setsupplierName(String supplierName) {
+		this.supplierName = supplierName;
 	}
 
 	@Column(name = "phone", nullable = false)
@@ -76,7 +76,7 @@ public class Suppliers implements java.io.Serializable {
 		this.phone = phone;
 	}
 
-	@Column(name = "address", nullable = false, length = 50)
+	@Column(name = "address", nullable = false, length = 50, columnDefinition = "nvarchar")
 	public String getAddress() {
 		return this.address;
 	}
