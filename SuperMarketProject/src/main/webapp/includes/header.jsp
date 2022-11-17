@@ -34,6 +34,7 @@
 <link
 	href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
 	rel='stylesheet' type='text/css'>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
@@ -57,29 +58,29 @@
 						NOW</a>
 				</p>
 			</div>
-			<div class="agile-login">
+			<div class="agile-login">			
 				<ul>
 					<c:if test="${empty sessionScope.userid}">
 						<li><a href="registered.jsp"> Create Account</a></li>
 						<li><a href="login.jsp">Login</a></li>
-						<li><a href="contact.jsp">Help</a></li>
+						<li><a href="contact.jsp">Help</a></li>						
 						<li><a href="#">${sessionScope["userid"]}</a></li>
 					</c:if>
 
 					<c:if test="${!empty sessionScope.userid}">
 					<!-- Them icon cham xanh hien thi dang hoat dong -->
-						<li><a href="#">${sessionScope.username}</a></li>
+						<li><a href="#"><i class='fas fa-circle' style='font-size:8px;color: #1bef31'>&nbsp;&nbsp;<b style='font-size:14px'>Online</b></i>&nbsp;&nbsp;${sessionScope.username}</a></li>										
 					</c:if>
-
-				</ul>
+				</ul>				
 			</div>
-			<div class="product_list_header">
+			<div class="product_list_header">			
 				<form action="#" method="post" class="last">
 					<input type="hidden" name="cmd" value="_cart"> <input
 						type="hidden" name="display" value="1">
+					<a href="#" style='padding_left=20px'>Logout</a>
 					<button class="w3view-cart" type="submit" name="submit" value="">
 						<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
-					</button>
+					</button>					
 				</form>
 			</div>
 			<div class="clearfix"></div>
