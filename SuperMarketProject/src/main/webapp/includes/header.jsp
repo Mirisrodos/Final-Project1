@@ -70,7 +70,7 @@
 					<c:if test="${!empty sessionScope.userid}">
 					<!-- Them icon cham xanh hien thi dang hoat dong -->
 						<li><a href="#"><i class='fas fa-circle' style='font-size:8px;color: #1bef31'>&nbsp;&nbsp;<b style='font-size:14px'>Online</b></i>&nbsp;&nbsp;${sessionScope.username}</a></li>										
-						<a href="logout" style='padding_left=20px'>Logout</a>
+						<li><a href="logout" style='padding_left=20px'>Logout</a></li>
 					</c:if>
 				</ul>				
 			</div>
