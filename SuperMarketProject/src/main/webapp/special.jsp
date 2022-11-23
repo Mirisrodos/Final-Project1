@@ -50,7 +50,7 @@
                                                                     <i class="fa fa-star blue-star" aria-hidden="true"></i>
                                                                     <i class="fa fa-star gray-star" aria-hidden="true"></i>
                                                                 </div>
-                                                                <h4>$ ${product.quantity}</h4>
+                                                                <h4>$ ${product.price}</h4>
                                                             </div>
                                                             <div class="snipcart-details top_brand_home_details">
                                                                 <form action="#" method="post">
@@ -106,7 +106,7 @@
                                                                     <i class="fa fa-star blue-star" aria-hidden="true"></i>
                                                                     <i class="fa fa-star gray-star" aria-hidden="true"></i>
                                                                 </div>
-                                                                <h4>$ ${product.quantity}</h4>
+                                                                <h4>$ ${product.price}</h4>
                                                             </div>
                                                             <div class="snipcart-details top_brand_home_details">
                                                                 <form action="#" method="post">

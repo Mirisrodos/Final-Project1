@@ -50,13 +50,13 @@
                                 <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Personal Hygiene</a> </li>
                                 <li><a href="products.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Shaving Needs</a></li>
                             </ul> -->
-                            <li><a href="groceries.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Groceries</a></li>
-                            <li><a href="household.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>House Hold</a></li>
-                            <li><a href="personalcare.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Personal Care</a></li>
-                            <li><a href="packagedfood.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Packaged Food</a></li>
-                            <li><a href="beverages.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Beverages</a></li>
-                            <li><a href="gourmet.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Gourmet</a></li>
-                            <li><a href="offers.jsp"><i class="fa fa-arrow-right" aria-hidden="true"></i>Special</a></li>
+                            <li><a href="renderdata?categoryName=Groceries"><i class="fa fa-arrow-right" aria-hidden="true"></i>Groceries</a></li>
+                            <li><a href="renderdata?categoryName=Household"><i class="fa fa-arrow-right" aria-hidden="true"></i>House Hold</a></li>
+                            <li><a href="renderdata?categoryName=Personal Care"><i class="fa fa-arrow-right" aria-hidden="true"></i>Personal Care</a></li>
+                            <li><a href="renderdata?categoryName=Packaged Foods"><i class="fa fa-arrow-right" aria-hidden="true"></i>Packaged Food</a></li>
+                            <li><a href="renderdata?categoryName=Beverages"><i class="fa fa-arrow-right" aria-hidden="true"></i>Beverages</a></li>
+                            <li><a href="renderdata?categoryName=Gourmet"><i class="fa fa-arrow-right" aria-hidden="true"></i>Gourmet</a></li>
+                            <li><a href="renderdata?categoryName=Special"><i class="fa fa-arrow-right" aria-hidden="true"></i>Special</a></li>
                         </ul>
                     </div>																																												
                 </div>
@@ -97,7 +97,7 @@
                                                 <div class="snipcart-thumb">
                                                     <a><img title=" " alt=" " src='images/${product.productImage}'></a>		
                                                     <p>${product.productName}</p>
-                                                    <h4>$ ${product.quantity}</h4>
+                                                    <h4>$ ${product.price}</h4>
                                                 </div>
                                                 <div class="snipcart-details top_brand_home_details">
                                                     <form action="#" method="post">
@@ -124,28 +124,8 @@
                         </c:forEach> 
                         <div class="clearfix"> </div>
                     </div>                               
-                  	</c:forEach>
-                    <nav class="numbering">
-                        <ul class="pagination paging">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li class="active"><a href="#">1<span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="clearfix"> </div>
+                  	</c:forEach>                   
+                </div>    
             </div>
         </div>
         <!--- beverages --->

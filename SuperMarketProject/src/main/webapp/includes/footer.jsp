@@ -6,7 +6,7 @@
 
 					<ul class="address">
 						<li><i class="glyphicon glyphicon-map-marker"
-							aria-hidden="true"></i>No. 1 Võ Văn Ngân, Thủ Đức District, Hồ Chí Minh City.</li>
+							aria-hidden="true"></i>No. 1 Vo Van Ngan, Thu Duc District, Ho Chi Minh City.</li>
 						<li><i class="glyphicon glyphicon-envelope"
 							aria-hidden="true"></i><a href="mailto:phanhongson234@gmail.com">phanhongson234@gmail.com</a></li>
 						<li><i class="glyphicon glyphicon-earphone"
@@ -19,35 +19,31 @@
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a
 							href="about.jsp">About Us</a></li>
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a
-							href="contact.jsp">Contact Us</a></li>
+							href="contact.jsp">Contact Us</a></li>						
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a
-							href="short-codes.jsp">Short Codes</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a
-							href="faq.jsp">FAQ's</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a
-							href="products.jsp">Special Products</a></li>
+							href="faq.jsp">FAQ's</a></li>						
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Category</h3>
 					<ul class="info">
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a
-							href="groceries.jsp">Groceries</a></li>
+							href="renderdata?categoryName=Groceries">Groceries</a></li>
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a
-							href="household.jsp">Household</a></li>
+							href="renderdata?categoryName=Household">Household</a></li>
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a
-							href="personalcare.jsp">Personal Care</a></li>
+							href="renderdata?categoryName=Personal Care">Personal Care</a></li>
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a
-							href="packagedfoods.jsp">Packaged Foods</a></li>
+							href="renderdata?categoryName=Packaged Foods">Packaged Foods</a></li>
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a
-							href="beverages.jsp">Beverages</a></li>
+							href="renderdata?categoryName=Beverages">Beverages</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Profile</h3>
 					<ul class="info">
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a
-							href="products.jsp">Store</a></li>
+							href="renderdata?categoryName=Groceries">Store</a></li>
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a
 							href="checkout.jsp">My Cart</a></li>
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a
@@ -65,7 +61,7 @@
 			<div class="container">
 				<p>
 					2022 Super Market. All rights reserved | Design by <a
-						href="http://w3layouts.com/">Hồng Sơn and Thuận Hòa</a>
+						href="http://w3layouts.com/">Hong Son and Thuan Hoa</a>
 				</p>
 			</div>
 		</div>

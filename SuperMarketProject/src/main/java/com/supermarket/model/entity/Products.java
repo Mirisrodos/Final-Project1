@@ -27,12 +27,12 @@ public class Products implements java.io.Serializable {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 2L;
 	private int productId;
 	private Categories categories;
 	private Suppliers suppliers;
 	private String productName;
-	private int quantity;
+	private int price;
 	private int rating;
 	private Date updateDate;
 	private boolean isSoldout;
@@ -42,22 +42,22 @@ public class Products implements java.io.Serializable {
 	public Products() {
 	}
 
-	public Products(int productId, String productName, int quantity, int rating, Date updateDate, boolean isSoldout) {
+	public Products(int productId, String productName, int price, int rating, Date updateDate, boolean isSoldout) {
 		this.productId = productId;
 		this.productName = productName;
-		this.quantity = quantity;
+		this.price = price;
 		this.rating = rating;
 		this.updateDate = updateDate;
 		this.isSoldout = isSoldout;
 	}
 
-	public Products(int productId, Categories categories, Suppliers suppliers, String productName, int quantity,
+	public Products(int productId, Categories categories, Suppliers suppliers, String productName, int price,
 			int rating, Date updateDate, boolean isSoldout, String productImage, Set<Orderdetails> orderdetailses) {
 		this.productId = productId;
 		this.categories = categories;
 		this.suppliers = suppliers;
 		this.productName = productName;
-		this.quantity = quantity;
+		this.price = price;
 		this.rating = rating;
 		this.updateDate = updateDate;
 		this.isSoldout = isSoldout;
@@ -105,13 +105,13 @@ public class Products implements java.io.Serializable {
 		this.productName = productName;
 	}
 
-	@Column(name = "quantity", nullable = false)
-	public int getQuantity() {
-		return this.quantity;
+	@Column(name = "price", nullable = false)
+	public int getPrice() {
+		return this.price;
 	}
 
-	public void setQuantity(int quantity) {
-		this.quantity = quantity;
+	public void setPrice(int price) {
+		this.price = price;
 	}
 
 	@Column(name = "rating", nullable = false)

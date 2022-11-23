@@ -5,8 +5,8 @@ USE supermarketdb;
 CREATE TABLE suppliers (
 	supplierID INT NOT NULL AUTO_INCREMENT,
 	supplierName NVARCHAR(20) NOT NULL,
-	phone NVARCHAR(10) NOT NULL,
-	address NVARCHAR(50) NOT NULL,
+	phone VARCHAR(10) NOT NULL,
+	address CHAR(50) NOT NULL,
 	
 	PRIMARY KEY (supplierID)
 );
@@ -14,7 +14,7 @@ CREATE TABLE suppliers (
 CREATE TABLE categories (
 	categoryID INT NOT NULL AUTO_INCREMENT,
 	categoryName NVARCHAR(20) NOT NULL,
-	description NVARCHAR(100),
+	descriptions NVARCHAR(100),
 	
 	PRIMARY KEY (categoryID)
 );
@@ -24,7 +24,7 @@ CREATE TABLE products (
 	supplierID INT NOT NULL,
 	categoryID INT NOT NULL,
 	productName NVARCHAR(50) NOT NULL,
-	quantity INT NOT NULL,
+	price INT NOT NULL,
 	rating INT NOT NULL,
 	updateDate DATE NOT NULL,
 	isSoldout BIT NOT NULL,
