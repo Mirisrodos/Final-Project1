@@ -92,7 +92,7 @@
 			<div class="w3ls_logo_products_left1">
 				<ul class="phone_email">
 					<li><i class="fa fa-phone" aria-hidden="true"></i>Order online
-						or call us : (+0123) 234 567</li>
+						or call us : (+84) 37221223</li>
 
 				</ul>
 			</div>
@@ -133,9 +133,9 @@
 				</div>
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.jsp" class="act">Home</a></li>
+						<li class="active"><a href="index.jsp" class="act">Home</a></li> 
 						<!-- Mega Menu -->
-						<li class="dropdown"><a href="#" class="dropdown-toggle"
+						<!-- <li class="dropdown"><a href="#" class="dropdown-toggle"
 							data-toggle="dropdown">Groceries<b class="caret"></b></a>
 							<ul class="dropdown-menu multi-column columns-3">
 								<div class="row">
@@ -225,9 +225,14 @@
 									</div>
 
 								</div>
-							</ul></li>
-						<li><a href="gourmet.jsp">Gourmet</a></li>
-						<li><a href="offers.jsp">Offers</a></li>
+							</ul></li> -->
+						<li><a href="renderdata?categoryName=Groceries">Groceries</a></li>
+						<li><a href="renderdata?categoryName=Household">House Hold</a></li>
+						<li><a href="renderdata?categoryName=Personal Care">Personal Care</a></li>
+						<li><a href="renderdata?categoryName=Packaged Foods">Packaged Foods</a></li>
+						<li><a href="renderdata?categoryName=Beverages">Beverages</a></li>
+						<li><a href="renderdata?categoryName=Gourmet">Gourmet</a></li>
+						<li><a href="renderdata?categoryName=Special">Special</a></li>
 						<li><a href="contact.jsp">Contact</a></li>
 					</ul>
 				</div>

@@ -3,6 +3,8 @@ package com.supermarket.model.dao;
 import java.util.List;
 
 import org.hibernate.Session;
+
+import com.supermarket.model.entity.Categories;
 import com.supermarket.model.entity.Products;
 
 public class ProductDAO extends HibernateDAO<Products> implements GenericDAO<Products> {
@@ -38,5 +40,18 @@ public class ProductDAO extends HibernateDAO<Products> implements GenericDAO<Pro
 		}
 		return null;
 	}
-
+	
+	public List<Products> selectByCategoryName(String categoryName) {
+		String HQL = "select c from Categories c where c.categoryName= :name";
+		try (Session session = factory.openSession()) {
+			Categories category = (Categories)session.createQuery(HQL).setParameter("name", categoryName).getSingleResult();
+			Integer id = (Integer)category.getCategoryId();
+			System.out.println(category.getCategoryName());
+			List<Products> products = selectByCategory(id);
+			return products;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 }

@@ -38,8 +38,7 @@ public class LoginUserServlet extends HttpServlet {
     	response.setCharacterEncoding("utf-8");
     	request.setCharacterEncoding("utf-8");
         try {
-        	checkAccount(request, response);    	
-        	PrintWriter t = response.getWriter();       	
+        	checkAccount(request, response);    	     	     	
         } catch (Exception e) {
             e.printStackTrace();
         }

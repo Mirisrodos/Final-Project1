@@ -6,12 +6,11 @@
 
 					<ul class="address">
 						<li><i class="glyphicon glyphicon-map-marker"
-							aria-hidden="true"></i>1234k Avenue, 4th block, <span>New
-								York City.</span></li>
+							aria-hidden="true"></i>No. 1 Võ Văn Ngân, Thủ Đức District, Hồ Chí Minh City.</li>
 						<li><i class="glyphicon glyphicon-envelope"
-							aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
+							aria-hidden="true"></i><a href="mailto:phanhongson234@gmail.com">phanhongson234@gmail.com</a></li>
 						<li><i class="glyphicon glyphicon-earphone"
-							aria-hidden="true"></i>+1234 567 567</li>
+							aria-hidden="true"></i>(+84) 37221223</li>
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
@@ -65,8 +64,8 @@
 
 			<div class="container">
 				<p>
-					� 2017 Super Market. All rights reserved | Design by <a
-						href="http://w3layouts.com/">W3layouts</a>
+					2022 Super Market. All rights reserved | Design by <a
+						href="http://w3layouts.com/">Hồng Sơn and Thuận Hòa</a>
 				</p>
 			</div>
 		</div>

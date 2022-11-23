@@ -64,7 +64,7 @@ public class Categories implements java.io.Serializable {
 		this.categoryName = categoryName;
 	}
 
-	@Column(name = "description", length = 100, columnDefinition = "nvarchar")
+	@Column(name = "descriptions", length = 100, columnDefinition = "nvarchar")
 	public String getdescription() {
 		return this.description;
 	}

@@ -1,6 +1,7 @@
 package com.supermarket.controller;
 
 import java.util.List;
+import java.util.Set;
 
 import org.hibernate.Session;
 import org.hibernate.Query;
@@ -20,7 +21,8 @@ public class testApp {
         
 //        Categories category = dao.select(1);
         
-        List<Products> product = dao.selectByCategory(3);
+        List<Products> product = dao.selectByCategoryName("Groceries");
+        // List<Products> product = dao.selectByCategory(3);
 //        // Lỗi dòng Where và setParameter, phải dùng phép join
 //        String HQL = "select p from Products p inner join p.categories c where c.categoryId= :id";
 //        Session session = HibernateUtils.getSessionFactory().openSession();
