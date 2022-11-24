@@ -54,4 +54,17 @@ public class ProductDAO extends HibernateDAO<Products> implements GenericDAO<Pro
 		}
 		return null;
 	}
+
+	public List<Products> searchProduct(String string) {
+		List<Products> products = null;
+		String name = "%" + string + "%";
+		String HQL = "select p from  Products p where p.productName like :name";
+
+		try (Session session = factory.openSession()){
+			products = session.createQuery(HQL).setParameter("name", name).list();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return products;
+	}
 }

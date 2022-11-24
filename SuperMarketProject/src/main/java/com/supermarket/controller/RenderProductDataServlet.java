@@ -32,10 +32,10 @@ public class RenderProductDataServlet extends HttpServlet {
 		}
 		
 		// Xoa khoang trang giua cac tu
-		String categoryNameToSend = categoryNameToFind.replaceAll("\\P{L}", "");
+		String categoryNameToSend = categoryNameToFind.replaceAll("\\{PL}", "");
 			
-		List<Products> products = productDAO.selectByCategoryName(categoryNameToFind);			
-			
+		List<Products> products = productDAO.selectByCategoryName(categoryNameToFind);
+
 		request.setAttribute("products", products);
 		request.setAttribute("total", products.size());
 			
