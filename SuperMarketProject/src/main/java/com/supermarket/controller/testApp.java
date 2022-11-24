@@ -18,27 +18,10 @@ public class testApp {
 
     public static void main(String[] args) {
         ProductDAO dao = new ProductDAO();
-        
-//        Categories category = dao.select(1);
-        
-        List<Products> product = dao.selectByCategoryName("Groceries");
-        // List<Products> product = dao.selectByCategory(3);
-//        // Lỗi dòng Where và setParameter, phải dùng phép join
-//        String HQL = "select p from Products p inner join p.categories c where c.categoryId= :id";
-//        Session session = HibernateUtils.getSessionFactory().openSession();
-//        try {
-//        	product = session.createQuery(HQL).setParameter("id", 1 ).list();
-//        } catch (Exception e) {
-//        	e.printStackTrace();
-//        } finally {
-//        	session.close();
-//        }
-		
-        for (Products p:product)
-        {
-        	System.out.println(p.getProductId());
-        }
-        
+        List<Products> products = dao.searchProduct("to");
+
+        for (Products p : products)
+        System.out.println(p.getProductName());
     }
 
 }
