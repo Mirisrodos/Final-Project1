@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 import com.supermarket.model.dao.ProductDAO;
 import com.supermarket.model.entity.Products;
 
-@WebServlet("/renderdata")
+@WebServlet(name = "renderdata", value = "/renderdata")
 public class RenderProductDataServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	ProductDAO productDAO = null;
