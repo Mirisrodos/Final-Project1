@@ -41,7 +41,7 @@
                                                     <figure>
                                                         <div class="snipcart-item block" >
                                                             <div class="snipcart-thumb">
-                                                                <a href="products.jsp"><img title=" " alt=" " src='images/${product.productImage}' /></a>		
+                                                                <a><img title=" " alt=" " src='images/${product.productImage}' /></a>		
                                                                 <p>${product.productName}</p>
                                                                 <div class="stars">
                                                                     <i class="fa fa-star blue-star" aria-hidden="true"></i>
@@ -97,7 +97,7 @@
                                                     <figure>
                                                         <div class="snipcart-item block" >
                                                             <div class="snipcart-thumb">
-                                                                <a href="products.jsp"><img title=" " alt=" " src='images/${product.productImage}' /></a>		
+                                                                <a><img title=" " alt=" " src='images/${product.productImage}' /></a>		
                                                                 <p>${product.productName}</p>
                                                                 <div class="stars">
                                                                     <i class="fa fa-star blue-star" aria-hidden="true"></i>

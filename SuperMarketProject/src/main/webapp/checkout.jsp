@@ -146,7 +146,7 @@
                     <div class="checkout-center-basket">
                         <h4>Delivery Address</h4>
                         <p><b>(*) Please fill in the correct delivery address information (note Building: ABC... if any)</b></p>                
-                        <input style='width:100%' type="text" name="fullName" placeholder="Full Name" required><br>
+                        <input disabled="disabled" style='width:100%' type="text" name="fullName" value="${sessionScope.username}" required><br>
                         <input style='width:49%;margin-right:0.52em' type="text" name="phoneNumber" placeholder="Phone Number" required>
                         <input style='width:49%' type="text" name="province" placeholder="Province" required><br>
                         <input style='width:49%;margin-right:0.52em' type="text" name="district" placeholder="District" required>
