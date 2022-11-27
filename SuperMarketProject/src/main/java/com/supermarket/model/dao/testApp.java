@@ -22,7 +22,7 @@ public class testApp {
 		
 //		System.out.println(udao.selectByEmail("hoa@gmail.com").getUserAddress());
 //		System.out.println(pdao.select(2).getProductName());
-		Set<Products> list = pdao.selectByCategory(1);
+		// Set<Products> list = pdao.selectByCategory(1);
 		
 //		System.out.println(list.isEmpty());
 		

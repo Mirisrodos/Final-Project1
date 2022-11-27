@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 import com.supermarket.model.dao.ProductDAO;
 import com.supermarket.model.entity.Products;
 
-@WebServlet(name = "renderdata", value = "/renderdata")
+@WebServlet("/renderdata")
 public class RenderProductDataServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	ProductDAO productDAO = null;
@@ -32,7 +32,7 @@ public class RenderProductDataServlet extends HttpServlet {
 		}
 		
 		// Xoa khoang trang giua cac tu
-		String categoryNameToSend = categoryNameToFind.replaceAll("\\{PL}", "");
+		String categoryNameToSend = categoryNameToFind.replaceAll(" ", "");
 			
 		List<Products> products = productDAO.selectByCategoryName(categoryNameToFind);
 

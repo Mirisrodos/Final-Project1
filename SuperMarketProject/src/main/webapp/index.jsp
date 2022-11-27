@@ -92,21 +92,21 @@
 				<div class="col-md-2 w3layouts-brand">
 					<div class="brands-w3l">
 						<p>
-							<a href="#">Lorem</a>
+							<a href="#" style='padding:0px 0px 0px 0px'><img src="images/Brand1.jpg" style='max-width:100%;max-height:100%' alt="" /></a>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l" >
+						<p>
+							<a href="#" style='padding:0px 0px 0px 0px'><img src="images/Brand2.jpg" style='max-width:100%;max-height:100%' alt="" /></a>
 						</p>
 					</div>
 				</div>
 				<div class="col-md-2 w3layouts-brand">
 					<div class="brands-w3l">
 						<p>
-							<a href="#">Lorem</a>
-						</p>
-					</div>
-				</div>
-				<div class="col-md-2 w3layouts-brand">
-					<div class="brands-w3l">
-						<p>
-							<a href="#">Lorem</a>
+							<a href="#" style='padding:0px 0px 0px 0px'><img src="images/Brand3.jpg" style='max-width:100%;max-height:100%' alt="" /></a>
 						</p>
 					</div>
 				</div>
@@ -114,21 +114,21 @@
 				<div class="col-md-2 w3layouts-brand">
 					<div class="brands-w3l">
 						<p>
-							<a href="#">Lorem</a>
+							<a href="#" style='padding:0px 0px 0px 0px'><img src="images/Brand4.jpg" style='max-width:100%;max-height:100%' alt="" /></a>
 						</p>
 					</div>
 				</div>
 				<div class="col-md-2 w3layouts-brand">
 					<div class="brands-w3l">
 						<p>
-							<a href="#">Lorem</a>
+							<a href="#" style='padding:0px 0px 0px 0px'><img src="images/Brand5.jpg" style='max-width:100%;max-height:100%' alt="" /></a>
 						</p>
 					</div>
 				</div>
 				<div class="col-md-2 w3layouts-brand">
 					<div class="brands-w3l">
 						<p>
-							<a href="#">Lorem</a>
+							<a href="#" style='padding:0px 0px 0px 0px'><img src="images/Brand6.jpg" style='max-width:100%;max-height:100%' alt="" /></a>
 						</p>
 					</div>
 				</div>
@@ -138,21 +138,21 @@
 				<div class="col-md-2 w3layouts-brand">
 					<div class="brands-w3l">
 						<p>
-							<a href="#">Lorem</a>
+							<a href="#" style='padding:0px 0px 0px 0px'><img src="images/Brand7.jpg" style='max-width:100%;max-height:100%' alt="" /></a>
 						</p>
 					</div>
 				</div>
 				<div class="col-md-2 w3layouts-brand">
 					<div class="brands-w3l">
 						<p>
-							<a href="#">Lorem</a>
+							<a href="#" style='padding:0px 0px 0px 0px'><img src="images/Brand8.jpeg" style='max-width:100%;max-height:100%' alt="" /></a>
 						</p>
 					</div>
 				</div>
 				<div class="col-md-2 w3layouts-brand">
 					<div class="brands-w3l">
 						<p>
-							<a href="#">Lorem</a>
+							<a href="#" style='padding:0px 0px 0px 0px'><img src="images/Brand9.jpg" style='max-width:100%;max-height:100%' alt="" /></a>
 						</p>
 					</div>
 				</div>
@@ -160,21 +160,21 @@
 				<div class="col-md-2 w3layouts-brand">
 					<div class="brands-w3l">
 						<p>
-							<a href="#">Lorem</a>
+							<a href="#" style='padding:0px 0px 0px 0px'><img src="images/Brand10.jpeg" style='max-width:100%;max-height:100%' alt="" /></a>
 						</p>
 					</div>
 				</div>
 				<div class="col-md-2 w3layouts-brand">
 					<div class="brands-w3l">
 						<p>
-							<a href="#">Lorem</a>
+							<a href="#" style='padding:0px 0px 0px 0px'><img src="images/Brand11.png" style='max-width:100%;max-height:100%' alt="" /></a>
 						</p>
 					</div>
 				</div>
 				<div class="col-md-2 w3layouts-brand">
 					<div class="brands-w3l">
 						<p>
-							<a href="#">Lorem</a>
+							<a href="#" style='padding:0px 0px 0px 0px'><img src="images/Brand12.jpg" style='max-width:100%;max-height:100%' alt="" /></a>
 						</p>
 					</div>
 				</div>
@@ -184,21 +184,21 @@
 				<div class="col-md-2 w3layouts-brand">
 					<div class="brands-w3l">
 						<p>
-							<a href="#">Lorem</a>
+							<a href="#" style='padding:0px 0px 0px 0px'><img src="images/Brand13.jpg" style='max-width:100%;max-height:100%' alt="" /></a>
 						</p>
 					</div>
 				</div>
 				<div class="col-md-2 w3layouts-brand">
 					<div class="brands-w3l">
 						<p>
-							<a href="#">Lorem</a>
+							<a href="#" style='padding:0px 0px 0px 0px'><img src="images/Brand14.jpeg" style='max-width:100%;max-height:100%' alt="" /></a>
 						</p>
 					</div>
 				</div>
 				<div class="col-md-2 w3layouts-brand">
 					<div class="brands-w3l">
 						<p>
-							<a href="#">Lorem</a>
+							<a href="#" style='padding:0px 0px 0px 0px'><img src="images/Brand15.jpeg" style='max-width:100%;max-height:100%' alt="" /></a>
 						</p>
 					</div>
 				</div>
@@ -206,21 +206,21 @@
 				<div class="col-md-2 w3layouts-brand">
 					<div class="brands-w3l">
 						<p>
-							<a href="#">Lorem</a>
+							<a href="#" style='padding:0px 0px 0px 0px'><img src="images/Brand16.jpeg" style='max-width:100%;max-height:100%' alt="" /></a>
 						</p>
 					</div>
 				</div>
 				<div class="col-md-2 w3layouts-brand">
 					<div class="brands-w3l">
 						<p>
-							<a href="#">Lorem</a>
+							<a href="#" style='padding:0px 0px 0px 0px'><img src="images/Brand17.png" style='max-width:100%;max-height:100%' alt="" /></a>
 						</p>
 					</div>
 				</div>
 				<div class="col-md-2 w3layouts-brand">
 					<div class="brands-w3l">
 						<p>
-							<a href="#">Lorem</a>
+							<a href="#" style='padding:0px 0px 0px 0px'><img src="images/Brand18.jpeg" style='max-width:100%;max-height:100%' alt="" /></a>
 						</p>
 					</div>
 				</div>
