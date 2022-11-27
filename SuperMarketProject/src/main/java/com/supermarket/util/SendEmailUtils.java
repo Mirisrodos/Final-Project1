@@ -1,10 +1,15 @@
 package com.supermarket.util;
 
-import jakarta.mail.*;
+import java.util.Properties;
+
+import jakarta.mail.Authenticator;
+import jakarta.mail.Message;
+import jakarta.mail.MessagingException;
+import jakarta.mail.PasswordAuthentication;
+import jakarta.mail.Session;
+import jakarta.mail.Transport;
 import jakarta.mail.internet.InternetAddress;
 import jakarta.mail.internet.MimeMessage;
-
-import java.util.Properties;
 
 public class SendEmailUtils {
     public static boolean sendEmail(String userMail, String subject ,String text) {
@@ -19,7 +24,8 @@ public class SendEmailUtils {
 
         Session session = Session.getInstance(prop,
                 new Authenticator() {
-                    protected PasswordAuthentication getPasswordAuthentication() {
+                    @Override
+					protected PasswordAuthentication getPasswordAuthentication() {
                         return new PasswordAuthentication(username, password);
                     }
                 });

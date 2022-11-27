@@ -10,7 +10,7 @@ public class HibernateUtils {
 		try {
 			Configuration configuration = new Configuration();
 			configuration.configure("hibernate.cfg.xml");
-			
+
 			return configuration.buildSessionFactory();
 		} catch(Exception e){
 			e.printStackTrace();

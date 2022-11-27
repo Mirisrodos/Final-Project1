@@ -11,17 +11,17 @@ public class UserDAO extends HibernateDAO<Users> implements GenericDAO<Users> {
 	public Users insert(Users user) {
 		return super.insert(user);
 	}
-	
+
 	@Override
 	public Users update(Users entity) {
 		return super.update(entity);
 	}
-	
+
 	@Override
 	public Users delete(Users entity) {
 		return super.delete(entity);
 	}
-	
+
 	@Override
 	public Users select(int id) {
 		// TODO Auto-generated method stub
@@ -45,7 +45,7 @@ public class UserDAO extends HibernateDAO<Users> implements GenericDAO<Users> {
 		}
 		return null;
 	}
-	
+
 	public boolean isExist(String userEmail) {
 		Transaction transaction = null;
 		Users user;
@@ -65,7 +65,7 @@ public class UserDAO extends HibernateDAO<Users> implements GenericDAO<Users> {
 		}
 		return false;
 	}
-	
+
 	public boolean isValidate(String userEmail, String userPassword) {
 		Transaction transaction = null;
 		Users user;
@@ -88,6 +88,6 @@ public class UserDAO extends HibernateDAO<Users> implements GenericDAO<Users> {
 	}
 
 
-	
-	
+
+
 }

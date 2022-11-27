@@ -3,12 +3,12 @@ package com.supermarket.model.entity;
 
 import java.util.HashSet;
 import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -21,15 +21,15 @@ import javax.persistence.Table;
 public class Suppliers implements java.io.Serializable {
 
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	private Integer supplierId;
 	private String supplierName;
 	private String phone;
 	private String address;
-	private Set<Products> productses = new HashSet<Products>(0);
+	private Set<Products> productses = new HashSet<>(0);
 
 	public Suppliers() {
 	}

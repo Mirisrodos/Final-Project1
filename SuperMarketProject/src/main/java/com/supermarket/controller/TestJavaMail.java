@@ -43,7 +43,7 @@ public class TestJavaMail {
 
         SendEmailUtils email = new SendEmailUtils();
 
-        System.out.println(email.sendEmail("truongthuanhoa23@gmail.com",
+        System.out.println(SendEmailUtils.sendEmail("truongthuanhoa23@gmail.com",
                 "Test Java Mail", "This mail to test Java Mail for my web"));
     }
 }

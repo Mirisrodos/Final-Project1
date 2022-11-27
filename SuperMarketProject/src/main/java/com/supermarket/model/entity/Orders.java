@@ -4,6 +4,7 @@ package com.supermarket.model.entity;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -25,7 +26,7 @@ import javax.persistence.TemporalType;
 public class Orders implements java.io.Serializable {
 
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 1L;
 	private int orderId;
@@ -34,7 +35,7 @@ public class Orders implements java.io.Serializable {
 	private String orderAddress;
 	private Date createDate;
 	private Date orderDate;
-	private Set<Orderdetails> orderdetailses = new HashSet<Orderdetails>(0);
+	private Set<Orderdetails> orderdetailses = new HashSet<>(0);
 
 	public Orders() {
 	}

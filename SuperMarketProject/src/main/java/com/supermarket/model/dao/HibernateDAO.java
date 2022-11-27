@@ -38,7 +38,7 @@ public class HibernateDAO<E> {
 		}
 		return entity;
 	}
-	
+
 	public E update(E entity) {
 		Transaction transaction = null;
 		try (Session session = factory.openSession()) {
@@ -57,7 +57,7 @@ public class HibernateDAO<E> {
 		}
 		return entity;
 	}
-	
+
 	public E delete(E entity) {
 		Transaction transaction = null;
 		try (Session session = factory.openSession()) {
@@ -74,7 +74,7 @@ public class HibernateDAO<E> {
 		}
 		return entity;
 	}
-	
+
 	public E select(Class<E> classE, int id) {
 		E entity = null;
 		Transaction transaction = null;

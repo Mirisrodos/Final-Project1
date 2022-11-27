@@ -4,6 +4,7 @@ package com.supermarket.model.entity;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -23,10 +24,10 @@ import javax.persistence.TemporalType;
 public class Users implements java.io.Serializable {
 
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	private int userId;
 	private String userEmail;
 	private String userPassword;
@@ -34,7 +35,7 @@ public class Users implements java.io.Serializable {
 	private String userAddress;
 	private String userPhone;
 	private Date registrationDate;
-	private Set<Orders> orderses = new HashSet<Orders>(0);
+	private Set<Orders> orderses = new HashSet<>(0);
 
 	public Users() {
 	}
@@ -49,7 +50,7 @@ public class Users implements java.io.Serializable {
 		this.userPhone = userPhone;
 		this.registrationDate = registrationDate;
 	}
-	
+
 
 	public Users(String userEmail, String userPassword, String userName, String userAddress, String userPhone,
 			Date registrationDate) {
