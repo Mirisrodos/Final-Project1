@@ -1211,6 +1211,7 @@ td.invert-image a img {
 	float: right;
     margin: 8em 0 0 0em;
 }
+
 .checkout-left-basket ul li span {
     float: right;
 }
@@ -1223,6 +1224,117 @@ td.invert-image a img {
 	border-bottom: 1px solid #DDD;
     margin: 2em 0 0;
 }
+
+.checkout-center-basket h4{
+	padding: 0.5em;
+    background:#ffde94;
+    font-size: 1.5em;
+    color: #CE181F;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 0.5em;
+}
+.checkout-center-basket ul li{
+	list-style-type:none;
+	margin-bottom:1em;
+	font-size:14px;
+	color:#999;
+}
+.checkout-center-basket {
+    float: left;
+    width: 59.2%;
+    margin: 0em 0em 0em 11em;
+}
+
+.checkout-center-basket ul li span {
+    float: right;
+}
+.checkout-center-basket ul li:nth-child(5) {
+    font-size: 1em;
+    color: #212121;
+    font-weight: 600;
+    padding: 1em 0;
+    border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+    margin: 2em 0 0;
+}
+
+.checkout-center-basket input {
+	
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-top: 10px;
+    height: 40px;
+    line-height: 40px;
+    -webkit-box-shadow: 0px 2px 4px 0 rgb(0 0 0 / 40%);
+    box-shadow: 0px 2px 4px 0 rgb(0 0 0 / 40%);
+    padding: 0 10px;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    font: inherit;
+    color: inherit;
+    box-sizing: border-box;
+    writing-mode: horizontal-tb !important;   
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+}
+
+.checkout-center-basket input[type="submit"] {
+	width: 20%;
+	font-family: "MergeBlack", sans-serif;
+    font-size: 1.5625rem;
+    color: #fff !important;
+    background-color: #c6001d;
+    border-radius: 3px;
+    padding: 5px 20px 5px 20px;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left:80%;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    align-items: flex-start;
+}
+
+.checkout-center-basket input[type="submit"]:hover {
+	font-size: 1.7rem;
+}
+
 .checkout-right-basket a{
 	padding:10px 30px;
 	color:#fff;

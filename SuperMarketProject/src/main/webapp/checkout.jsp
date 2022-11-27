@@ -142,12 +142,24 @@
                             <li>Total Service Charges <i>-</i> <span>$15.00</span></li>
                             <li>Total <i>-</i> <span>$84.00</span></li>
                         </ul>
-                    </div>
-                    <div class="checkout-right-basket">
-                        <a href="single.jsp"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Continue Shopping</a>
-                    </div>
-                    <div class="clearfix"> </div>
+                    </div>       
+                    <div class="checkout-center-basket">
+                        <h4>Delivery Address</h4>
+                        <p><b>(*) Please fill in the correct delivery address information (note Building: ABC... if any)</b></p>                
+                        <input style='width:100%' type="text" name="fullName" placeholder="Full Name" required><br>
+                        <input style='width:49%;margin-right:0.52em' type="text" name="phoneNumber" placeholder="Phone Number" required>
+                        <input style='width:49%' type="text" name="province" placeholder="Province" required><br>
+                        <input style='width:49%;margin-right:0.52em' type="text" name="district" placeholder="District" required>
+                        <input style='width:49%' type="text" name="wards" placeholder="Wards" required><br>
+                        <input style='width:100%' type="text" name="address" placeholder="Address" required><br>    
+                        <input style="" type="submit" value="Pay"><br>   
+                    </div>                       
+                  <div class="clearfix"> </div>                               
                 </div>
+                
+                <div class="checkout-left-basket">
+                        <a href="single.jsp"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Continue Shopping</a>
+                </div>     
             </div>
         </div>
         <!-- //checkout -->

@@ -1,7 +1,6 @@
 package com.supermarket.controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,7 +18,7 @@ public class LoginUserServlet extends HttpServlet {
 
     @Override
     public void init() {
-        loginDAO = new UserDAO();      
+        loginDAO = new UserDAO();
     }
 
     @Override
@@ -38,7 +37,7 @@ public class LoginUserServlet extends HttpServlet {
     	response.setCharacterEncoding("utf-8");
     	request.setCharacterEncoding("utf-8");
         try {
-        	checkAccount(request, response);    	     	     	
+        	checkAccount(request, response);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -53,15 +52,15 @@ public class LoginUserServlet extends HttpServlet {
 //        	Thêm session và các tính năng Attribute khi đăng nhập thành công
             HttpSession session = request.getSession();
             session.setAttribute("userid", loginDAO.selectByEmail(email).getUserId());
-            session.setAttribute("username", loginDAO.selectByEmail(email).getUserName());         
-            response.sendRedirect("index.jsp");         
+            session.setAttribute("username", loginDAO.selectByEmail(email).getUserName());
+            response.sendRedirect("index.jsp");
         } else {
 //        	Thêm các Attribute khi đăng nhập thất bại để hiện ra thông báo xác nhận là
-//        	tài khoản và mật khẩu        	      	
-            response.sendRedirect("login.jsp");       	
+//        	tài khoản và mật khẩu
+            response.sendRedirect("login.jsp");
         }
     }
-    
+
     @Override
     public void destroy() {
     	loginDAO.close();

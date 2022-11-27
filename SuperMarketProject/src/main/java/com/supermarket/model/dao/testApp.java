@@ -1,0 +1,22 @@
+package com.supermarket.model.dao;
+
+import java.util.Date;
+
+
+public class testApp {
+
+	public static void main(String[] args) {
+		Date date = new Date(2002-12-12);
+		UserDAO udao = new UserDAO();
+		ProductDAO pdao = new ProductDAO();
+
+//		System.out.println(udao.selectByEmail("hoa@gmail.com").getUserAddress());
+//		System.out.println(pdao.select(2).getProductName());
+		// Set<Products> list = pdao.selectByCategory(1);
+
+//		System.out.println(list.isEmpty());
+
+		System.out.println();
+		System.out.println("Finally");
+	}
+}

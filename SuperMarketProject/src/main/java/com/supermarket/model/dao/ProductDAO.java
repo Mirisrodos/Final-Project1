@@ -40,13 +40,12 @@ public class ProductDAO extends HibernateDAO<Products> implements GenericDAO<Pro
 		}
 		return null;
 	}
-	
+
 	public List<Products> selectByCategoryName(String categoryName) {
 		String HQL = "select c from Categories c where c.categoryName= :name";
 		try (Session session = factory.openSession()) {
 			Categories category = (Categories)session.createQuery(HQL).setParameter("name", categoryName).getSingleResult();
-			Integer id = (Integer)category.getCategoryId();
-			System.out.println(category.getCategoryName());
+			Integer id = category.getCategoryId();
 			List<Products> products = selectByCategory(id);
 			return products;
 		} catch (Exception e) {

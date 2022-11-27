@@ -19,10 +19,10 @@ import javax.persistence.Table;
 public class Orderdetails implements java.io.Serializable {
 
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	private int detailId;
 	private Orders orders;
 	private Products products;

@@ -2,6 +2,7 @@ package com.supermarket.controller;
 
 import java.io.IOException;
 import java.util.Calendar;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -41,7 +42,7 @@ public class RegisterUserServlet extends HttpServlet {
         }
 	}
 
-	private void createAccount(HttpServletRequest request, HttpServletResponse response) 
+	private void createAccount(HttpServletRequest request, HttpServletResponse response)
 			throws Exception {
 		String text = "Thanks for joining our Website, here is an automatic email to confirm that your account is registered successfully. We will sent you coupons, vouchers and another discount via this email" +
 				". Please not reply this email.";
@@ -50,11 +51,11 @@ public class RegisterUserServlet extends HttpServlet {
 		Users user = new Users();
 		user.setUserEmail(request.getParameter("userEmail"));
 		user.setUserPassword(request.getParameter("userPassword"));
-		user.setUserName(request.getParameter("userName")); 
-		user.setUserAddress(request.getParameter("userAddress")); 
-		user.setUserPhone(request.getParameter("userPhone")); 
+		user.setUserName(request.getParameter("userName"));
+		user.setUserAddress(request.getParameter("userAddress"));
+		user.setUserPhone(request.getParameter("userPhone"));
 		user.setRegistrationDate(Calendar.getInstance().getTime());
-		
+
 		if (!registeredDAO.isExist(user.getUserEmail())) {
 			registeredDAO.insert(user);
 			response.sendRedirect("login.jsp");

@@ -3,6 +3,7 @@ package com.supermarket.model.entity;
 
 import java.util.HashSet;
 import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -20,14 +21,14 @@ import javax.persistence.Table;
 public class Categories implements java.io.Serializable {
 
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	private int categoryId;
 	private String categoryName;
 	private String description;
-	private Set<Products> productses = new HashSet<Products>(0);
+	private Set<Products> productses = new HashSet<>(0);
 
 	public Categories() {
 	}
