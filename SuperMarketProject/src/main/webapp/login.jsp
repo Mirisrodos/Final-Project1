@@ -22,9 +22,7 @@
                     <form action="login" method="post">
                         <input type="email" placeholder="Email Address" name='userEmail' required>
                         <input type="password" placeholder="Password" name='userPassword' required >
-                        <div class="forgot">
-                            <a href="#">Forgot Password?</a>
-                        </div>
+                        
                         <input type="submit" value="Submit">
                     </form>
                 </div>
