@@ -100,6 +100,7 @@
                                                     <h4>$ ${product.price}</h4>
                                                 </div>
                                                 <div class="snipcart-details top_brand_home_details">
+<%--                                                    Them vao gio hang--%>
                                                     <form action="#" method="post">
                                                         <fieldset>
                                                             <input type="hidden" name="cmd" value="_cart">
