@@ -31,7 +31,6 @@ public class Orders implements java.io.Serializable {
 	private static final long serialVersionUID = 1L;
 	private int orderId;
 	private Users users;
-	private int orderAmount;
 	private String orderAddress;
 	private Date createDate;
 	private Date orderDate;
@@ -40,19 +39,17 @@ public class Orders implements java.io.Serializable {
 	public Orders() {
 	}
 
-	public Orders(int orderId, int orderAmount, String orderAddress, Date createDate, Date orderDate) {
+	public Orders(int orderId, String orderAddress, Date createDate, Date orderDate) {
 		this.orderId = orderId;
-		this.orderAmount = orderAmount;
 		this.orderAddress = orderAddress;
 		this.createDate = createDate;
 		this.orderDate = orderDate;
 	}
 
-	public Orders(int orderId, Users users, int orderAmount, String orderAddress, Date createDate, Date orderDate,
+	public Orders(int orderId, Users users, String orderAddress, Date createDate, Date orderDate,
 			Set<Orderdetails> orderdetailses) {
 		this.orderId = orderId;
 		this.users = users;
-		this.orderAmount = orderAmount;
 		this.orderAddress = orderAddress;
 		this.createDate = createDate;
 		this.orderDate = orderDate;
@@ -80,16 +77,9 @@ public class Orders implements java.io.Serializable {
 		this.users = users;
 	}
 
-	@Column(name = "orderAmount", nullable = false)
-	public int getOrderAmount() {
-		return this.orderAmount;
-	}
 
-	public void setOrderAmount(int orderAmount) {
-		this.orderAmount = orderAmount;
-	}
 
-	@Column(name = "orderAddress", nullable = false, length = 50, columnDefinition = "nvarchar")
+	@Column(name = "orderAddress", nullable = true, length = 50, columnDefinition = "nvarchar")
 	public String getOrderAddress() {
 		return this.orderAddress;
 	}
@@ -99,7 +89,7 @@ public class Orders implements java.io.Serializable {
 	}
 
 	@Temporal(TemporalType.DATE)
-	@Column(name = "createDate", nullable = false, length = 10)
+	@Column(name = "createDate", nullable = true, length = 10)
 	public Date getCreateDate() {
 		return this.createDate;
 	}
@@ -109,7 +99,7 @@ public class Orders implements java.io.Serializable {
 	}
 
 	@Temporal(TemporalType.DATE)
-	@Column(name = "orderDate", nullable = false, length = 10)
+	@Column(name = "orderDate", nullable = true, length = 10)
 	public Date getOrderDate() {
 		return this.orderDate;
 	}

@@ -37,12 +37,12 @@ insert into suppliers(supplierName, phone, address)
 insert into suppliers(supplierName, phone, address) 
 	values("King Dom", "5567 3344", "Hà Tĩnh");
     
-insert into orders(orderUserID, orderAmount, orderAddress, createDate, orderDate)
-	values(1, 5, "Bình Dương", "2022-10-15", "2022-10-15");
-insert into orders(orderUserID, orderAmount, orderAddress, createDate, orderDate)
-	values(3, 2, "Bình Phước", "2022-10-18", "2022-10-18");
-insert into orders(orderUserID, orderAmount, orderAddress, createDate, orderDate)
-	values(4, 5, "Hà Nội", "2022-10-18", "2022-10-21");
+insert into orders(orderUserID, orderAddress, createDate, orderDate)
+	values(1, "Bình Dương", "2022-10-15", "2022-10-15");
+insert into orders(orderUserID, orderAddress, createDate, orderDate)
+	values(3, "Bình Phước", "2022-10-18", "2022-10-18");
+insert into orders(orderUserID, orderAddress, createDate, orderDate)
+	values(4, "Hà Nội", "2022-10-18", "2022-10-21");
     
 insert into products(supplierID, categoryID, productName, price, rating, updateDate, isSoldout, productImage)
 	values(2, 1, "Toor Dal", 50, 4, "2022-10-30", 0, "14.png");
@@ -175,9 +175,9 @@ insert into products(supplierID, categoryID, productName, price, rating, updateD
 insert into products(supplierID, categoryID, productName, price, rating, updateDate, isSoldout, productImage)
 	values(3, 7, "Bread-Sandwich", 84, 5, "2022-07-25", 0, "13.png");
 
-insert into orderdetails(detailOrderID, detailProductID, detailPrice, detailQuantity) 
-	values(1, 9, 89, 4);
-insert into orderdetails(detailOrderID, detailProductID, detailPrice, detailQuantity) 
-	values(2, 18, 67, 3);
-insert into orderdetails(detailOrderID, detailProductID, detailPrice, detailQuantity) 
-	values(3, 5, 123, 10);
+insert into orderdetails(detailOrderID, detailProductID, detailQuantity)
+	values(1, 9, 4);
+insert into orderdetails(detailOrderID, detailProductID, detailQuantity)
+	values(2, 18, 3);
+insert into orderdetails(detailOrderID, detailProductID, detailQuantity)
+	values(3, 5, 10);
