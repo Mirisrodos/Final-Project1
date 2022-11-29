@@ -26,24 +26,21 @@ public class Orderdetails implements java.io.Serializable {
 	private int detailId;
 	private Orders orders;
 	private Products products;
-	private int detailPrice;
 	private int detailQuantity;
 
 	public Orderdetails() {
 	}
 
-	public Orderdetails(int detailId, Products products, int detailPrice, int detailQuantity) {
+	public Orderdetails(int detailId, Products products, int detailQuantity) {
 		this.detailId = detailId;
 		this.products = products;
-		this.detailPrice = detailPrice;
 		this.detailQuantity = detailQuantity;
 	}
 
-	public Orderdetails(int detailId, Orders orders, Products products, int detailPrice, int detailQuantity) {
+	public Orderdetails(int detailId, Orders orders, Products products, int detailQuantity) {
 		this.detailId = detailId;
 		this.orders = orders;
 		this.products = products;
-		this.detailPrice = detailPrice;
 		this.detailQuantity = detailQuantity;
 	}
 
@@ -76,15 +73,6 @@ public class Orderdetails implements java.io.Serializable {
 
 	public void setProducts(Products products) {
 		this.products = products;
-	}
-
-	@Column(name = "detailPrice", nullable = false)
-	public int getDetailPrice() {
-		return this.detailPrice;
-	}
-
-	public void setDetailPrice(int detailPrice) {
-		this.detailPrice = detailPrice;
 	}
 
 	@Column(name = "detailQuantity", nullable = false)

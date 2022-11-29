@@ -4,7 +4,7 @@ package com.supermarket.util;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class HibernateUtils {
+public class HibernateUtil {
 
 	public static SessionFactory getSessionFactory() {
 		try {

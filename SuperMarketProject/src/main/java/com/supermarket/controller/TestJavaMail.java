@@ -1,6 +1,6 @@
 package com.supermarket.controller;
 
-import com.supermarket.util.SendEmailUtils;
+import com.supermarket.util.SendEmailUtil;
 
 public class TestJavaMail {
     public static void main(String[] args) {
@@ -41,9 +41,9 @@ public class TestJavaMail {
 //            e.printStackTrace();
 //        }
 
-        SendEmailUtils email = new SendEmailUtils();
+        SendEmailUtil email = new SendEmailUtil();
 
-        System.out.println(SendEmailUtils.sendEmail("truongthuanhoa23@gmail.com",
+        System.out.println(SendEmailUtil.sendEmail("truongthuanhoa23@gmail.com",
                 "Test Java Mail", "This mail to test Java Mail for my web"));
     }
 }

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.supermarket.model.dao.UserDAO;
 import com.supermarket.model.entity.Users;
-import com.supermarket.util.SendEmailUtils;
+import com.supermarket.util.SendEmailUtil;
 
 /**
  * Servlet implementation class RegisterUserServlet
@@ -59,7 +59,7 @@ public class RegisterUserServlet extends HttpServlet {
 		if (!registeredDAO.isExist(user.getUserEmail())) {
 			registeredDAO.insert(user);
 			response.sendRedirect("login.jsp");
-			System.out.println(SendEmailUtils.sendEmail(user.getUserEmail(), subject, text));
+			System.out.println(SendEmailUtil.sendEmail(user.getUserEmail(), subject, text));
 		}
 		else
 		{

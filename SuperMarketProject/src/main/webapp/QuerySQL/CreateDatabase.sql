@@ -51,10 +51,9 @@ CREATE TABLE users (
 CREATE TABLE orders (
 	orderID INT NOT NULL AUTO_INCREMENT,
 	orderUserID INT NOT NULL,
-	orderAmount INT NOT NULL,
-	orderAddress NVARCHAR(50) NOT NULL,
-	createDate DATE NOT NULL,
-	orderDate DATE NOT NULL,
+	orderAddress NVARCHAR(50),
+	createDate DATE,
+	orderDate DATE,
 	
 	PRIMARY KEY (orderID),
 	FOREIGN KEY (orderUserID) REFERENCES users(userID)
@@ -62,9 +61,8 @@ CREATE TABLE orders (
 
 CREATE TABLE orderdetails (
 	detailID INT NOT NULL AUTO_INCREMENT,
-	detailOrderID INT NOT NULL,
+	detailOrderID INT,
 	detailProductID INT NOT NULL,
-	detailPrice INT NOT NULL,
 	detailQuantity INT NOT NULL,
 
 	PRIMARY KEY (detailID),

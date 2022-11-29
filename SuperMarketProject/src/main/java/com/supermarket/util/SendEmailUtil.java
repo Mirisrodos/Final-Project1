@@ -11,7 +11,7 @@ import jakarta.mail.Transport;
 import jakarta.mail.internet.InternetAddress;
 import jakarta.mail.internet.MimeMessage;
 
-public class SendEmailUtils {
+public class SendEmailUtil {
 
     public static boolean sendEmail(String userMail, String subject ,String text) {
         final String username = "truongthuanhoa23@gmail.com";

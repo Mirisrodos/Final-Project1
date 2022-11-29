@@ -4,14 +4,14 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
-import com.supermarket.util.HibernateUtils;
+import com.supermarket.util.HibernateUtil;
 
 public class HibernateDAO<E> {
 	protected static SessionFactory factory;
 
 	// Chay khi duoc goi tuong tu contructor()
 	static {
-		factory = HibernateUtils.getSessionFactory();
+		factory = HibernateUtil.getSessionFactory();
 	}
 
 	public HibernateDAO() {
