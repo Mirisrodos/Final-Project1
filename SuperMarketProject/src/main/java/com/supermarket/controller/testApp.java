@@ -1,7 +1,5 @@
 package com.supermarket.controller;
 
-import java.util.List;
-
 import com.supermarket.model.dao.OrderDAO;
 import com.supermarket.model.dao.OrderdetailDAO;
 import com.supermarket.model.dao.ProductDAO;
@@ -10,7 +8,6 @@ import com.supermarket.model.entity.Orderdetails;
 import com.supermarket.model.entity.Orders;
 import com.supermarket.model.entity.Products;
 import com.supermarket.model.entity.Users;
-import org.hibernate.criterion.Order;
 
 public class testApp {
 

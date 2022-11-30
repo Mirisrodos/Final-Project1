@@ -1,20 +1,25 @@
 package com.supermarket.controller;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 import com.supermarket.model.dao.OrderDAO;
 import com.supermarket.model.dao.ProductDAO;
 import com.supermarket.model.entity.Orderdetails;
 import com.supermarket.model.entity.Products;
 
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
 @WebServlet("/AddToCartServlet")
 public class AddToCartServlet extends HttpServlet {
-    private ProductDAO productDAO = null;
+	private static final long serialVersionUID = 1L;
+	private ProductDAO productDAO = null;
     private OrderDAO orderDAO = null;
 
     @Override
@@ -35,15 +40,15 @@ public class AddToCartServlet extends HttpServlet {
             if (request.getParameter("productId") != null) {
                 id = Integer.parseInt(request.getParameter("productId"));
                 Products product = productDAO.select(id);
-                if (product != null) {
-                    HttpSession session = request.getSession();
+                HttpSession session = request.getSession();
+                if (product != null) {                   
                     if (session.getAttribute("orderlist") == null) {
-                        List<Orderdetails> orderlist = new ArrayList<Orderdetails>();
+                        List<Orderdetails> orderlist = new ArrayList<>();
                         Orderdetails order = new Orderdetails();
                         order.setProducts(product);
                         order.setDetailQuantity(quality);
                         orderlist.add(order);
-                        request.setAttribute("totalProduct", 10);
+                        session.setAttribute("totalProduct", orderlist.size());
                         session.setAttribute("orderlist", orderlist);
                     } else {
                         List<Orderdetails> orderlist = (List<Orderdetails>) session.getAttribute("orderlist");
@@ -54,19 +59,19 @@ public class AddToCartServlet extends HttpServlet {
                                 check = true;
                             }
                         }
-                        if (check == false) {
+                        if (!check) {
                             Orderdetails order = new Orderdetails();
                             order.setProducts(product);
                             order.setDetailQuantity(quality);
                             orderlist.add(order);
                         }
-                        request.setAttribute("totalProduct", 10);
-                        session.setAttribute("orderlist", orderlist);                       
+                        session.setAttribute("totalProduct", orderlist.size());
+                        session.setAttribute("totalAmount", caculateTotalAmount(orderlist));
+                        session.setAttribute("orderlist", orderlist);
                     }
                 }
                 System.out.println("true");
-//                Test
-                HttpSession session = request.getSession();
+//                Test              
                 List<Orderdetails> orderlist = (List<Orderdetails>) session.getAttribute("orderlist");
                 for (Orderdetails order : orderlist) {
                     System.out.println(order.getProducts().getProductName());
@@ -92,6 +97,14 @@ public class AddToCartServlet extends HttpServlet {
             return true;
         }
         return false;
+    }
+    
+    private int caculateTotalAmount(List<Orderdetails> orderList) {
+    	int temp = 0;
+    	for(Orderdetails item : orderList) {
+    		temp = temp + item.getProducts().getPrice();
+    	}
+    	return temp;
     }
 
     @Override

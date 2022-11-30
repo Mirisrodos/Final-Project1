@@ -1,8 +1,9 @@
 package com.supermarket.model.dao;
 
+import org.hibernate.Session;
+
 import com.supermarket.model.entity.Orders;
 import com.supermarket.model.entity.Users;
-import org.hibernate.Session;
 
 public class OrderDAO extends HibernateDAO<Orders> implements GenericDAO<Orders> {
 
