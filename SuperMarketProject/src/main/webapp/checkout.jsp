@@ -55,7 +55,7 @@
 	                            <td class="invert">${item.products.price}</td>
 	                            <td class="invert">
 	                                <div class="rem">
-	                                    <a href="#"><div class="close1"></div></a>
+	                                    <a href="removefromcart?detailId=${item.detailId}"><div class="close1"></div></a>
 	                                </div>                              
 	                            </td>
                         	</tr>
@@ -85,7 +85,7 @@
 	                        <c:forEach var="item" items="${orderlist}">
 	                        	<li>${item.products.productName}<span>${item.detailQuantity} x $${ item.products.price}.00 = $${item.detailQuantity * item.products.price}.00 </span></li>                    	
 	                        </c:forEach>                                                                              
-                            <li>Total <i>-</i> <span>$${totalAmount}.00</span></li>
+                            <li>Total<span>$${totalAmount}.00</span></li>
                         </ul>
                     </div>       
                     <div class="checkout-center-basket">
