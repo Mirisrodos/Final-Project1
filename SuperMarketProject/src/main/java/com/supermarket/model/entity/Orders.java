@@ -32,11 +32,22 @@ public class Orders implements java.io.Serializable {
 	private int orderId;
 	private Users users;
 	private String orderAddress;
+	private int orderPhone;
+
 	private Date createDate;
 	private Date orderDate;
 	private Set<Orderdetails> orderdetailses = new HashSet<>(0);
 
 	public Orders() {
+	}
+
+	@Column(name = "orderPhone", nullable = true)
+	public int getOrderPhone() {
+		return orderPhone;
+	}
+
+	public void setOrderPhone(int orderPhone) {
+		this.orderPhone = orderPhone;
 	}
 
 	@Id

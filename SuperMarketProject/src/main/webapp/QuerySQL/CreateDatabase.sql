@@ -54,6 +54,7 @@ CREATE TABLE orders (
 	orderAddress NVARCHAR(50),
 	createDate DATE,
 	orderDate DATE,
+	orderPhone int,
 	
 	PRIMARY KEY (orderID),
 	FOREIGN KEY (orderUserID) REFERENCES users(userID)

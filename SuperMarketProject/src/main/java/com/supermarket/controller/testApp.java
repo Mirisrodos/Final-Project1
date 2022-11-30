@@ -9,6 +9,7 @@ import com.supermarket.model.dao.UserDAO;
 import com.supermarket.model.entity.Orderdetails;
 import com.supermarket.model.entity.Orders;
 import com.supermarket.model.entity.Products;
+import com.supermarket.model.entity.Users;
 import org.hibernate.criterion.Order;
 
 public class testApp {
@@ -21,8 +22,14 @@ public class testApp {
 
         Orderdetails orderdetails = orderdetailDAO.select(1);
         Products products = productDAO.select(orderdetails.getProducts().getProductId());
+        Users user = userDAO.select(1);
+
+        Orders order = new Orders();
+        order.setOrderPhone(01241);
+        order.setOrderAddress("HCM");
+        order.setUsers(user);
+        orderDAO.insert(order);
 
         System.out.println(products.getPrice());
     }
-
 }
