@@ -43,29 +43,6 @@ public class Products implements java.io.Serializable {
 	public Products() {
 	}
 
-	public Products(int productId, String productName, int price, int rating, Date updateDate, boolean isSoldout) {
-		this.productId = productId;
-		this.productName = productName;
-		this.price = price;
-		this.rating = rating;
-		this.updateDate = updateDate;
-		this.isSoldout = isSoldout;
-	}
-
-	public Products(int productId, Categories categories, Suppliers suppliers, String productName, int price,
-			int rating, Date updateDate, boolean isSoldout, String productImage, Set<Orderdetails> orderdetailses) {
-		this.productId = productId;
-		this.categories = categories;
-		this.suppliers = suppliers;
-		this.productName = productName;
-		this.price = price;
-		this.rating = rating;
-		this.updateDate = updateDate;
-		this.isSoldout = isSoldout;
-		this.productImage = productImage;
-		this.orderdetailses = orderdetailses;
-	}
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "productID", unique = true, nullable = false)

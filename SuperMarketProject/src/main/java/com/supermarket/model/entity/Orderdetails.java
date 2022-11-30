@@ -31,19 +31,6 @@ public class Orderdetails implements java.io.Serializable {
 	public Orderdetails() {
 	}
 
-	public Orderdetails(int detailId, Products products, int detailQuantity) {
-		this.detailId = detailId;
-		this.products = products;
-		this.detailQuantity = detailQuantity;
-	}
-
-	public Orderdetails(int detailId, Orders orders, Products products, int detailQuantity) {
-		this.detailId = detailId;
-		this.orders = orders;
-		this.products = products;
-		this.detailQuantity = detailQuantity;
-	}
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "detailID", unique = true, nullable = false)

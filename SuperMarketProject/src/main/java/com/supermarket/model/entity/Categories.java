@@ -33,18 +33,6 @@ public class Categories implements java.io.Serializable {
 	public Categories() {
 	}
 
-	public Categories(int categoryId, String categoryName) {
-		this.categoryId = categoryId;
-		this.categoryName = categoryName;
-	}
-
-	public Categories(int categoryId, String categoryName, String description, Set<Products> productses) {
-		this.categoryId = categoryId;
-		this.categoryName = categoryName;
-		this.description = description;
-		this.productses = productses;
-	}
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "categoryID", unique = true, nullable = false)

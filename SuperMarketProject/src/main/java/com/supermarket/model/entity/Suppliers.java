@@ -34,19 +34,6 @@ public class Suppliers implements java.io.Serializable {
 	public Suppliers() {
 	}
 
-	public Suppliers(String supplierName, String phone, String address) {
-		this.supplierName = supplierName;
-		this.phone = phone;
-		this.address = address;
-	}
-
-	public Suppliers(String supplierName, String phone, String address, Set<Products> productses) {
-		this.supplierName = supplierName;
-		this.phone = phone;
-		this.address = address;
-		this.productses = productses;
-	}
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "supplierID", unique = true, nullable = false)

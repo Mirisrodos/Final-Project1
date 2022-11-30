@@ -39,23 +39,6 @@ public class Orders implements java.io.Serializable {
 	public Orders() {
 	}
 
-	public Orders(int orderId, String orderAddress, Date createDate, Date orderDate) {
-		this.orderId = orderId;
-		this.orderAddress = orderAddress;
-		this.createDate = createDate;
-		this.orderDate = orderDate;
-	}
-
-	public Orders(int orderId, Users users, String orderAddress, Date createDate, Date orderDate,
-			Set<Orderdetails> orderdetailses) {
-		this.orderId = orderId;
-		this.users = users;
-		this.orderAddress = orderAddress;
-		this.createDate = createDate;
-		this.orderDate = orderDate;
-		this.orderdetailses = orderdetailses;
-	}
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "orderID", unique = true, nullable = false)

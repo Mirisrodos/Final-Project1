@@ -40,41 +40,6 @@ public class Users implements java.io.Serializable {
 	public Users() {
 	}
 
-	public Users(int userId, String userEmail, String userPassword, String userName, String userAddress, String userPhone,
-			Date registrationDate) {
-		this.userId = userId;
-		this.userEmail = userEmail;
-		this.userPassword = userPassword;
-		this.userName = userName;
-		this.userAddress = userAddress;
-		this.userPhone = userPhone;
-		this.registrationDate = registrationDate;
-	}
-
-
-	public Users(String userEmail, String userPassword, String userName, String userAddress, String userPhone,
-			Date registrationDate) {
-		super();
-		this.userEmail = userEmail;
-		this.userPassword = userPassword;
-		this.userName = userName;
-		this.userAddress = userAddress;
-		this.userPhone = userPhone;
-		this.registrationDate = registrationDate;
-	}
-
-	public Users(int userId, String userEmail, String userPassword, String userName, String userAddress, String userPhone,
-			Date registrationDate, Set<Orders> orderses) {
-		this.userId = userId;
-		this.userEmail = userEmail;
-		this.userPassword = userPassword;
-		this.userName = userName;
-		this.userAddress = userAddress;
-		this.userPhone = userPhone;
-		this.registrationDate = registrationDate;
-		this.orderses = orderses;
-	}
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "userID", unique = true, nullable = false)
