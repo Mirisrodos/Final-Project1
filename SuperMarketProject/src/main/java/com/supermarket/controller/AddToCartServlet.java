@@ -71,9 +71,10 @@ public class AddToCartServlet extends HttpServlet {
                     System.out.println(order.getDetailQuantity());
                 }
                 System.out.println(request.getContextPath());
-
-                response.sendRedirect("renderdata?categoryName=" + request.getParameter("categoryName"));
-//                response.sendRedirect("checkout");
+                if (request.getParameter("categoryName") != null)
+                    response.sendRedirect("renderdata?categoryName=" + request.getParameter("categoryName"));
+                else
+                    response.sendRedirect("index.jsp");
             } else {
                 System.out.println("false");
                 System.out.println(request.getAttribute("productId"));
