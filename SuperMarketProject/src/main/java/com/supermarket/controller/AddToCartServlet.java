@@ -43,6 +43,7 @@ public class AddToCartServlet extends HttpServlet {
                         order.setProducts(product);
                         order.setDetailQuantity(quality);
                         orderlist.add(order);
+                        request.setAttribute("totalProduct", 10);
                         session.setAttribute("orderlist", orderlist);
                     } else {
                         List<Orderdetails> orderlist = (List<Orderdetails>) session.getAttribute("orderlist");
@@ -59,7 +60,8 @@ public class AddToCartServlet extends HttpServlet {
                             order.setDetailQuantity(quality);
                             orderlist.add(order);
                         }
-                        session.setAttribute("orderlist", orderlist);
+                        request.setAttribute("totalProduct", 10);
+                        session.setAttribute("orderlist", orderlist);                       
                     }
                 }
                 System.out.println("true");

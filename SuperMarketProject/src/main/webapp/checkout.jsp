@@ -15,7 +15,15 @@
         <!-- checkout -->
         <div class="checkout">
             <div class="container">
-                <h2>Your shopping cart contains: <span>3 Products</span></h2>
+            	<c:choose>
+            		<c:when test="${empty totalProduct}">
+            			<h2>Your shopping cart contains: <span>0 PRODUCTS</span></h2>
+            		</c:when>
+            		<c:otherwise>
+            			<h2>Your shopping cart contains: <span>${totalProduct} PRODUCTS</span></h2>
+            		</c:otherwise>
+            	</c:choose>      
+            	<form>    
                 <div class="checkout-right">
                     <table class="timetable_sub">
                         <thead>
@@ -29,36 +37,31 @@
                                 <th>Remove</th>
                             </tr>
                         </thead>
-                        <tr class="rem1">
-                            <td class="invert">1</td>
-                            <td class="invert-image"><a href="single.jsp"><img src="images/1.png" alt=" " class="img-responsive" /></a></td>
-                            <td class="invert">
-                                <div class="quantity"> 
-                                    <div class="quantity-select">                           
-                                        <div class="entry value-minus">&nbsp;</div>
-                                        <div class="entry value"><span>1</span></div>
-                                        <div class="entry value-plus active">&nbsp;</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="invert">Tata Salt</td>
-
-                            <td class="invert">$290.00</td>
-                            <td class="invert">
-                                <div class="rem">
-                                    <div class="close1"> </div>
-                                </div>
-                                <script>$(document).ready(function (c) {
-                                        $('.close1').on('click', function (c) {
-                                            $('.rem1').fadeOut('slow', function (c) {
-                                                $('.rem1').remove();
-                                            });
-                                        });
-                                    });
-                                </script>
-                            </td>
-                        </tr>
-                        <tr class="rem2">
+                        <c:forEach var="item" items="${orderlist}" varStatus="status">
+                        	<tr class="rem1">
+	                            <td class="invert">${status.index + 1}</td>
+	                            <td class="invert-image"><a><img src='images/${item.products.productImage}' alt=" " class="img-responsive" /></a></td>
+	                            <td class="invert">
+	                                <div class="quantity"> 
+	                                    <div class="quantity-select">                           
+	                                        <div class="entry value-minus">&nbsp;</div>
+	                                        <div class="entry value"><span>${item.detailQuantity}</span></div>
+	                                        <div class="entry value-plus active">&nbsp;</div>
+	                                    </div>
+	                                </div>
+	                            </td>
+	                            <td class="invert">${item.products.productName}</td>
+	
+	                            <td class="invert">${item.products.price}</td>
+	                            <td class="invert">
+	                                <div class="rem">
+	                                    <a href="#"><div class="close1"></div></a>
+	                                </div>                              
+	                            </td>
+                        	</tr>
+                        </c:forEach>                      
+                       
+                        <!--  <tr class="rem2">
                             <td class="invert">2</td>
                             <td class="invert-image"><a href="single.jsp"><img src="images/2.png" alt=" " class="img-responsive" /></a></td>
                             <td class="invert">
@@ -115,7 +118,7 @@
                                     });
                                 </script>
                             </td>
-                        </tr>
+                        </tr> -->
                         <!--quantity-->
                         <script>
                             $('.value-plus').on('click', function () {
@@ -131,7 +134,8 @@
                         </script>
                         <!--quantity-->
                     </table>
-                </div>
+                </div>        
+                </form>          
                 <div class="checkout-left">	
                     <div class="checkout-left-basket">
                         <h4>Continue to basket</h4>
