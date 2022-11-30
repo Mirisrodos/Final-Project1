@@ -19,15 +19,10 @@ public class testApp {
         OrderdetailDAO orderdetailDAO = new OrderdetailDAO();
         ProductDAO productDAO = new ProductDAO();
 
-        Orders order = orderDAO.select(1);
-        Products products = productDAO.select(1);
-        Orderdetails orderdetails = new Orderdetails();
-//        orderdetails.setProducts(products);
-//        orderdetails.setDetailQuantity(1);
-//        orderdetails.setOrders(order);
-//        orderdetailDAO.insert(orderdetails);
-        orderdetails = orderdetailDAO.select(5);
-        System.out.println(orderdetails.getOrders().getOrderId());
+        Orderdetails orderdetails = orderdetailDAO.select(1);
+        Products products = productDAO.select(orderdetails.getProducts().getProductId());
+
+        System.out.println(products.getPrice());
     }
 
 }

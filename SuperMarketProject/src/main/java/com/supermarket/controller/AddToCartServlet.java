@@ -2,20 +2,15 @@ package com.supermarket.controller;
 
 import com.supermarket.model.dao.OrderDAO;
 import com.supermarket.model.dao.ProductDAO;
-import com.supermarket.model.dao.UserDAO;
 import com.supermarket.model.entity.Orderdetails;
-import com.supermarket.model.entity.Orders;
 import com.supermarket.model.entity.Products;
-import com.supermarket.model.entity.Users;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 @WebServlet("/AddToCartServlet")
 public class AddToCartServlet extends HttpServlet {
@@ -77,8 +72,11 @@ public class AddToCartServlet extends HttpServlet {
                     System.out.println(order.getProducts().getProductName());
                     System.out.println(order.getDetailQuantity());
                 }
-
-                response.sendRedirect("checkout");
+                System.out.println(request.getContextPath());
+                if (request.getParameter("categoryName") != null)
+                    response.sendRedirect("renderdata?categoryName=" + request.getParameter("categoryName"));
+                else
+                    response.sendRedirect("index.jsp");
             } else {
                 System.out.println("false");
                 System.out.println(request.getAttribute("productId"));
