@@ -44,9 +44,9 @@
 	                            <td class="invert">
 	                                <div class="quantity"> 
 	                                    <div class="quantity-select">                           
-	                                        <div class="entry value-minus">&nbsp;</div>
+	                                        <a href="UpdateQuantity?action=decrease&amp;productId=${item.products.productId}">Decrease&nbsp;</a>
 	                                        <div class="entry value"><span>${item.detailQuantity}</span></div>
-	                                        <div class="entry value-plus active">&nbsp;</div>
+	                                        <a href="UpdateQuantity?action=increase&amp;productId=${item.products.productId}">Increase&nbsp;</a>
 	                                    </div>
 	                                </div>
 	                            </td>
@@ -55,26 +55,11 @@
 	                            <td class="invert">${item.products.price}</td>
 	                            <td class="invert">
 	                                <div class="rem">
-	                                    <a href="removefromcart?detailId=${item.detailId}"><div class="close1"></div></a>
+	                                    <a href="removefromcart?productId=${item.products.productId}"><div class="close1"></div></a>
 	                                </div>                              
 	                            </td>
                         	</tr>
-                        </c:forEach>                      
-                                            
-                        <!--quantity-->
-                        <script>
-                            $('.value-plus').on('click', function () {
-                                var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10) + 1;
-                                divUpd.text(newVal);
-                            });
-
-                            $('.value-minus').on('click', function () {
-                                var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10) - 1;
-                                if (newVal >= 1)
-                                    divUpd.text(newVal);
-                            });
-                        </script>
-                        <!--quantity-->
+                        </c:forEach>                                                                                       
                     </table>
                 </div>        
                 </form>          

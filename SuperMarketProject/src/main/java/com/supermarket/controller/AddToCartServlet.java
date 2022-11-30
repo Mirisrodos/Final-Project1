@@ -32,6 +32,7 @@ public class AddToCartServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         if (!isLogin(request, response)) {
             response.sendRedirect("login.jsp");
+            System.out.println("Mac cai deo gi chay o day ?");
         } else {
             int quality = 1;
             int id;
@@ -74,6 +75,7 @@ public class AddToCartServlet extends HttpServlet {
 //                Test              
                 List<Orderdetails> orderlist = (List<Orderdetails>) session.getAttribute("orderlist");
                 for (Orderdetails order : orderlist) {
+                	System.out.println(order.getDetailId());
                     System.out.println(order.getProducts().getProductName());
                     System.out.println(order.getDetailQuantity());
                 }
@@ -102,7 +104,7 @@ public class AddToCartServlet extends HttpServlet {
     private int caculateTotalAmount(List<Orderdetails> orderList) {
     	int temp = 0;
     	for(Orderdetails item : orderList) {
-    		temp = temp + item.getProducts().getPrice();
+    		temp = temp + item.getProducts().getPrice() * item.getDetailQuantity();
     	}
     	return temp;
     }

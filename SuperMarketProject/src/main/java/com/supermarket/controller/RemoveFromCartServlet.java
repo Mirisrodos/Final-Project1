@@ -26,7 +26,7 @@ public class RemoveFromCartServlet extends HttpServlet {
 			response.sendRedirect("login.jsp");		
 		}
 		else {		
-			int detailId = Integer.parseInt(request.getParameter("detailId"));
+			int productId = Integer.parseInt(request.getParameter("productId"));
 			
 			HttpSession session = request.getSession();
 			
@@ -34,7 +34,7 @@ public class RemoveFromCartServlet extends HttpServlet {
 			orderList = (List<Orderdetails>)session.getAttribute("orderlist");
 			
 			for(Orderdetails item : orderList) {
-				if (item.getDetailId() == detailId) {
+				if (item.getProducts().getProductId() == productId) {
 					orderList.remove(item);
 					break;
 				}
@@ -57,7 +57,7 @@ public class RemoveFromCartServlet extends HttpServlet {
 	 private int caculateTotalAmount(List<Orderdetails> orderList) {
 	    	int temp = 0;
 	    	for(Orderdetails item : orderList) {
-	    		temp = temp + item.getProducts().getPrice();
+	    		temp = temp + item.getProducts().getPrice() * item.getDetailQuantity();
 	    	}
 	    	return temp;
 	 }
