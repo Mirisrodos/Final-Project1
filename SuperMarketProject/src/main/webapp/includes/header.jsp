@@ -55,7 +55,7 @@
 		<div class="container">
 			<div class="w3l_offers">
 				<p>
-					SALE UP TO 70% OFF. USE CODE "SALE70%" . <a href="products.jsp">SHOP
+					SALE UP TO 70% OFF. USE CODE "SALE70%" . <a href="renderdata?categoryName=Groceries">SHOP
 						NOW</a>
 				</p>
 			</div>
