@@ -44,9 +44,9 @@
 	                            <td class="invert">
 	                                <div class="quantity"> 
 	                                    <div class="quantity-select">                           
-	                                        <a href="UpdateQuantity?action=decrease&amp;productId=${item.products.productId}">Decrease&nbsp;</a>
+	                                        <a href="UpdateQuantity?action=decrease&amp;productId=${item.products.productId}" style="font-size: 30px">-&nbsp;</a>
 	                                        <div class="entry value"><span>${item.detailQuantity}</span></div>
-	                                        <a href="UpdateQuantity?action=increase&amp;productId=${item.products.productId}">Increase&nbsp;</a>
+	                                        <a href="UpdateQuantity?action=increase&amp;productId=${item.products.productId}" style="font-size: 30px">+&nbsp;</a>
 	                                    </div>
 	                                </div>
 	                            </td>
@@ -75,14 +75,17 @@
                     </div>       
                     <div class="checkout-center-basket">
                         <h4>Delivery Address</h4>
-                        <p><b>(*) Please fill in the correct delivery address information (note Building: ABC... if any)</b></p>                
-                        <input disabled="disabled" style='width:100%' type="text" name="fullName" value="${sessionScope.username}" required><br>
-                        <input style='width:49%;margin-right:0.52em' type="text" name="phoneNumber" placeholder="Phone Number" required>
-                        <input style='width:49%' type="text" name="province" placeholder="Province" required><br>
-                        <input style='width:49%;margin-right:0.52em' type="text" name="district" placeholder="District" required>
-                        <input style='width:49%' type="text" name="wards" placeholder="Wards" required><br>
-                        <input style='width:100%' type="text" name="address" placeholder="Address" required><br>    
-                        <input style="" type="submit" value="Pay"><br>   
+                        <p><b>(*) Please fill in the correct delivery address information (note Building: ABC... if any)</b></p>
+                        <form action="order" method="post">
+                            <input disabled="disabled" style='width:100%' type="text" name="fullName" value="${sessionScope.username}" required><br>
+                            <input style='width:49%;margin-right:0.52em' type="text" name="phoneNumber" placeholder="Phone Number" required>
+                            <input style='width:49%' type="text" name="province" placeholder="Province" required><br>
+                            <input style='width:49%;margin-right:0.52em' type="text" name="district" placeholder="District" required>
+                            <input style='width:49%' type="text" name="wards" placeholder="Wards" required><br>
+                            <input style='width:100%' type="text" name="address" placeholder="Address" required><br>
+                            <input style="" type="submit" value="Pay"><br>
+                        </form>
+
                     </div>                       
                   <div class="clearfix"> </div>                               
                 </div>

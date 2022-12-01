@@ -9,6 +9,9 @@ import com.supermarket.model.entity.Orders;
 import com.supermarket.model.entity.Products;
 import com.supermarket.model.entity.Users;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class testApp {
 
     public static void main(String[] args) {
@@ -17,16 +20,11 @@ public class testApp {
         OrderdetailDAO orderdetailDAO = new OrderdetailDAO();
         ProductDAO productDAO = new ProductDAO();
 
-        Orderdetails orderdetails = orderdetailDAO.select(1);
-        Products products = productDAO.select(orderdetails.getProducts().getProductId());
+        Date date = new Date();
+        date.setDate(date.getDate() + 3);
+
         Users user = userDAO.select(1);
-
-        Orders order = new Orders();
-        order.setOrderPhone(01241);
-        order.setOrderAddress("HCM");
-        order.setUsers(user);
-        orderDAO.insert(order);
-
-        System.out.println(products.getPrice());
+        user.setRegistrationDate(date);
+        userDAO.update(user);
     }
 }

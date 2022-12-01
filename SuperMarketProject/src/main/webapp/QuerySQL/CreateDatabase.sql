@@ -51,7 +51,7 @@ CREATE TABLE users (
 CREATE TABLE orders (
 	orderID INT NOT NULL AUTO_INCREMENT,
 	orderUserID INT NOT NULL,
-	orderAddress NVARCHAR(50),
+	orderAddress NVARCHAR(100),
 	createDate DATE,
 	orderDate DATE,
 	orderPhone int,
