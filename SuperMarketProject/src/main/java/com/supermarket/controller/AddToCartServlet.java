@@ -31,8 +31,7 @@ public class AddToCartServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         if (!isLogin(request, response)) {
-            response.sendRedirect("login.jsp");
-            System.out.println("Mac cai deo gi chay o day ?");
+            response.sendRedirect("login.jsp");          
         } else {
             int quality = 1;
             int id;
